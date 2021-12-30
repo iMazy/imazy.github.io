@@ -1,34 +1,433 @@
-include mixins
 
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title>童年之后 再无古装 [ Mazy&#39;s Home ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+</head>
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item toc-menu">
+        <a id="menu-main-post" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/logo.png" alt="MENU">
+        </a>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mazy&#39;s Home</h1>
+      <!-- <span>The best revenge is massive success!</span> -->
+  </a>
+  <!-- 
+  <img class="logo" id="logo" src="/logo.png" alt="logo">
+   -->
+</nav>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      <article class="post" id="post">
+  <header class="post-header text-center">
+    <h1 class="title">
+      童年之后 再无古装
+    </h1>
+    
+    <time class="time" datetime="2017-09-27T07:34:33.000Z">
+      2017-09-27
+    </time>
+    
+    <hr>
+  </header>
+  <div class="post-content">
+    <p><strong>童年已经回不去，但有些记忆却挥之不去，埋藏在心间。</strong></p>
+<p><strong>怀恋小时候没有网络，看黑白电视的时光。</strong></p>
+<p><strong>感谢童年的古装，伴我们成长。</strong></p>
+<p><strong>因为有你，所以不孤单。</strong></p>
+<p>——————————敬：<strong>陪伴我们成长的古装</strong></p>
+<a id="more"></a>
+
+<hr>
+<h4 id="《书剑恩仇录》"><a href="#《书剑恩仇录》" class="headerlink" title="《书剑恩仇录》"></a>《书剑恩仇录》</h4><ul>
+<li>播放年份: 1992</li>
+<li>制片地区: 台湾</li>
+<li>主演: 龙隆 / 何家劲 / 刘雪华</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-2ceaf9ff011f8df4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《书剑恩仇录》"></p>
+<hr>
+<h4 id="《飞狐外传》"><a href="#《飞狐外传》" class="headerlink" title="《飞狐外传》"></a>《飞狐外传》</h4><ul>
+<li>播放年份: 1993</li>
+<li>制片地区: 香港</li>
+<li>主演: 黎明 / 李嘉欣 / 张敏 / 徐锦江 / 何家驹</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-a397b991eedf85e4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《飞狐外传》"></p>
+<hr>
+<h4 id="《神雕侠侣》"><a href="#《神雕侠侣》" class="headerlink" title="《神雕侠侣》"></a>《神雕侠侣》</h4><ul>
+<li>播放年份: 1995</li>
+<li>制片地区: 香港 </li>
+<li>主演: 古天乐 / 李若彤 / 李绮虹 / 张可颐 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-47fe82f4cbe3eb08.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《神雕侠侣》"></p>
+<hr>
+<h4 id="《鹿鼎记》"><a href="#《鹿鼎记》" class="headerlink" title="《鹿鼎记》"></a>《鹿鼎记》</h4><ul>
+<li>播放年份: 1998</li>
+<li>制片地区: 香港</li>
+<li>主演: 陈小春 / 马浚伟 / 刘玉翠 / 梁小冰 / 徐濠萦 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-bd3147260ee0fcbb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《鹿鼎记》"></p>
+<hr>
+<h4 id="《白发魔女传》"><a href="#《白发魔女传》" class="headerlink" title="《白发魔女传》"></a>《白发魔女传》</h4><ul>
+<li>播放年份: 1999</li>
+<li>制片地区: 大陆</li>
+<li>主演: 张智霖 / 蒋勤勤 / 陈俊生 / 于佳卉 / 林芳兵</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-ecad8bc1b70084f4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《白发魔女传》"></p>
+<hr>
+<h4 id="《绝代双骄》"><a href="#《绝代双骄》" class="headerlink" title="《绝代双骄》"></a>《绝代双骄》</h4><ul>
+<li>播放年份: 1999</li>
+<li>制片地区: 台湾 / 大陆</li>
+<li>主演: 林志颖 / 苏有朋 / 陈德容 / 李绮虹 / 郑嘉颖</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-8ab3d069ba93748a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《绝代双骄》"></p>
+<hr>
+<h4 id="《小李飞刀》（飞刀问情）"><a href="#《小李飞刀》（飞刀问情）" class="headerlink" title="《小李飞刀》（飞刀问情）"></a>《小李飞刀》（飞刀问情）</h4><ul>
+<li>播放年份: 1999</li>
+<li>制片地区: 台湾</li>
+<li>主演: 焦恩俊 / 贾静雯 / 俞飞鸿 / 萧蔷 / 吴京</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-a588b218005527d5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《小李飞刀》"><br><img src="http://upload-images.jianshu.io/upload_images/1335668-537b35afba7f9cc0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《小李飞刀》"></p>
+<hr>
+<h4 id="《碧血剑》"><a href="#《碧血剑》" class="headerlink" title="《碧血剑》"></a>《碧血剑》</h4><ul>
+<li>播放年份: 2000</li>
+<li>制片地区: 香港</li>
+<li>主演: 江华 / 欧子欣 / 吴美珩 / 林家栋</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-de95fcef02460c21.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《碧血剑》"></p>
+<hr>
+<h4 id="《三少爷的剑》"><a href="#《三少爷的剑》" class="headerlink" title="《三少爷的剑》"></a>《三少爷的剑》</h4><ul>
+<li>播放年份: 2001</li>
+<li>制片地区: 大陆</li>
+<li>主演: 何中华 / 俞飞鸿 / 陈龙 / 陈继铭 / 张伊函</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-1cc1fa95dbb67360.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《三少爷的剑》"><br><img src="http://upload-images.jianshu.io/upload_images/1335668-0f7d011ae36a2092.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《三少爷的剑》"></p>
+<hr>
+<h4 id="《乌龙闯情关》"><a href="#《乌龙闯情关》" class="headerlink" title="《乌龙闯情关》"></a>《乌龙闯情关》</h4><ul>
+<li>播放年份: 2001</li>
+<li>制片地区: 大陆</li>
+<li>主演: 孙耀威 / 曹颖 / 柯受良 / 林心如 / 释小龙 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-1bf96143b1fff576.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《乌龙闯情关》"></p>
+<hr>
+<h4 id="《少年张三丰》"><a href="#《少年张三丰》" class="headerlink" title="《少年张三丰》"></a>《少年张三丰》</h4><ul>
+<li>播放年份: 2001</li>
+<li>制片地区: 大陆 / 台湾</li>
+<li>主演: 张卫健 / 李冰冰 / 李小璐 / 苏有朋 / 林心如 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-bbcd43e286fcb7ca.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《少年张三丰》 "><br><img src="http://upload-images.jianshu.io/upload_images/1335668-924ec206cdb93004.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《少年张三丰》 "></p>
+<hr>
+<h4 id="《侠客行》"><a href="#《侠客行》" class="headerlink" title="《侠客行》"></a>《侠客行》</h4><ul>
+<li>播放年份: 2001</li>
+<li>制片地区: 大陆</li>
+<li>主演: 吴健 / 周莉 / 章馨心 / 邓嘉 / 杨欣</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-fd93803f9642282e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《侠客行》"></p>
+<hr>
+<h4 id="《笑傲江湖》"><a href="#《笑傲江湖》" class="headerlink" title="《笑傲江湖》"></a>《笑傲江湖》</h4><ul>
+<li>播放年份: 2001</li>
+<li>制片地区: 大陆</li>
+<li>主演: 李亚鹏 / 许晴 / 苗乙乙 / 巍子 / 陈丽峰</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-efb42957db2834b8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《笑傲江湖》"></p>
+<hr>
+<h4 id="《风云-1》"><a href="#《风云-1》" class="headerlink" title="《风云 1》"></a>《风云 1》</h4><ul>
+<li>播放年份: 2002</li>
+<li>制片地区: 大陆</li>
+<li>主演: 赵文卓 / 何润东 / 千叶真一 / 蒋勤勤 / 陶红</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-ac5d37fad1a8ba7a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《风云 1》 "></p>
+<hr>
+<h4 id="《流星·蝴蝶·剑》"><a href="#《流星·蝴蝶·剑》" class="headerlink" title="《流星·蝴蝶·剑》"></a>《流星·蝴蝶·剑》</h4><ul>
+<li>播放年份: 2002</li>
+<li>制片地区: 香港</li>
+<li>主演: 郑少秋 / 丁子峻 / 徐少强</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-244591f4a82551ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《流星·蝴蝶·剑》"></p>
+<hr>
+<h4 id="《水月洞天》"><a href="#《水月洞天》" class="headerlink" title="《水月洞天》"></a>《水月洞天》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 大陆</li>
+<li>主演: 于波 / 蔡少芬 / 杨俊毅 / 陈法蓉 / 张晋</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-c91a405d19515f63.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《水月洞天》"></p>
+<hr>
+<h4 id="《雪花女神龙》"><a href="#《雪花女神龙》" class="headerlink" title="《雪花女神龙》"></a>《雪花女神龙》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 大陆</li>
+<li>主演: 董璇 / 任天野 / 乔振宇 / 孙耀威 / 陈孝萱</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-d0007b9877b0c759.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《雪花女神龙》"></p>
+<hr>
+<h4 id="《萧十一郎》"><a href="#《萧十一郎》" class="headerlink" title="《萧十一郎》"></a>《萧十一郎》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 大陆</li>
+<li>主演: 吴奇隆 / 朱茵 / 于波 / 马雅舒 / 万弘杰 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-533474e0cfc690ca.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《萧十一郎》"></p>
+<hr>
+<h4 id="《射雕英雄传》"><a href="#《射雕英雄传》" class="headerlink" title="《射雕英雄传》"></a>《射雕英雄传》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 大陆</li>
+<li>主演: 李亚鹏 / 周迅 / 周杰 / 蒋勤勤 / 阿斯茹</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-0e464896ec5ce7ee.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《射雕英雄传》 "></p>
+<hr>
+<h4 id="《倚天屠龙记》"><a href="#《倚天屠龙记》" class="headerlink" title="《倚天屠龙记》"></a>《倚天屠龙记》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 中国大陆 / 香港 / 台湾 </li>
+<li>主演: 苏有朋 / 贾静雯 / 高圆圆 / 张国立 / 张铁林</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-ddaefe62b2b66d5e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《倚天屠龙记》"></p>
+<hr>
+<h4 id="《天龙八部》"><a href="#《天龙八部》" class="headerlink" title="《天龙八部》"></a>《天龙八部》</h4><ul>
+<li>播放年份: 2003</li>
+<li>制片地区: 大陆</li>
+<li>主演: 胡军 / 林志颖 / 高虎 / 修庆 / 刘亦菲</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-e0596ff3fcf55f81.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《天龙八部》"></p>
+<hr>
+<h4 id="《风云-2》"><a href="#《风云-2》" class="headerlink" title="《风云 2》"></a>《风云 2》</h4><ul>
+<li>播放年份: 2005</li>
+<li>制片地区: 大陆</li>
+<li>主演: 赵文卓 / 何润东 / 冯绍峰 / 黄奕 / 秦岚</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-11339cbf0aa78850.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《风云 2》"></p>
+<hr>
+<h4 id="《连城诀》"><a href="#《连城诀》" class="headerlink" title="《连城诀》"></a>《连城诀》</h4><ul>
+<li>播放年份: 2004</li>
+<li>制片地区: 大陆</li>
+<li>主演: 吴樾 / 何美钿 / 舒畅 / 杜志国 / 计春华</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-bda9bf67bc162cd0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《连城诀》"></p>
+<hr>
+<h4 id="《天下第一》"><a href="#《天下第一》" class="headerlink" title="《天下第一》"></a>《天下第一》</h4><ul>
+<li>播放年份: 2005</li>
+<li>制片地区: 大陆 / 香港 / 台湾</li>
+<li>主演: 郭晋安 / 叶璇 / 张卫健 / 李亚鹏 / 陈怡蓉 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-2d6b99c43424550f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《天下第一》"></p>
+<hr>
+<h4 id="《小鱼儿和花无缺》"><a href="#《小鱼儿和花无缺》" class="headerlink" title="《小鱼儿和花无缺》"></a>《小鱼儿和花无缺》</h4><ul>
+<li>播放年份: 2005</li>
+<li>制片地区: 大陆</li>
+<li>主演: 谢霆锋 / 张卫健 / 袁泉 / 范冰冰 </li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-8b1b5f112894e66d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《小鱼儿和花无缺》"></p>
+<hr>
+<h4 id="《雪山飞狐》"><a href="#《雪山飞狐》" class="headerlink" title="《雪山飞狐》"></a>《雪山飞狐》</h4><ul>
+<li>播放年份: 2007</li>
+<li>制片地区: 大陆</li>
+<li>主演: 聂远 / 朱茵 / 钟欣潼 / 安以轩 / 方中信</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-493018308bea215c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="雪山飞狐.jpg"></p>
+<hr>
+<h4 id="《射雕英雄传》-1"><a href="#《射雕英雄传》-1" class="headerlink" title="《射雕英雄传》"></a>《射雕英雄传》</h4><ul>
+<li>播放年份: 2008</li>
+<li>制片地区: 大陆</li>
+<li>主演: 胡歌 / 林依晨 / 袁弘 / 刘诗诗 / 周海媚</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-a9ab1ea478f2a2c9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="《射雕英雄传》"></p>
+<hr>
+<p>本文仅截取部分古装剧，欢迎补充，谢谢。</p>
+<hr>
+<h4 id="金庸十四部"><a href="#金庸十四部" class="headerlink" title="金庸十四部"></a>金庸十四部</h4><table>
+<thead>
+<tr>
+<th>金庸小说集</th>
+<th>金庸小说集</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>飞狐外传</td>
+<td>笑傲江湖</td>
+</tr>
+<tr>
+<td>雪山飞狐</td>
+<td>书剑恩仇录</td>
+</tr>
+<tr>
+<td>连城诀</td>
+<td>神雕侠侣</td>
+</tr>
+<tr>
+<td>天龙八部</td>
+<td>侠客行</td>
+</tr>
+<tr>
+<td>射雕英雄传</td>
+<td>倚天屠龙记</td>
+</tr>
+<tr>
+<td>白马啸西风</td>
+<td>碧血剑</td>
+</tr>
+<tr>
+<td>鹿鼎记</td>
+<td>鸳鸯刀</td>
+</tr>
+<tr>
+<td>☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞</td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="飞雪连天射白鹿，笑书神侠倚碧鸳"><a href="#飞雪连天射白鹿，笑书神侠倚碧鸳" class="headerlink" title="飞雪连天射白鹿，笑书神侠倚碧鸳"></a>飞雪连天射白鹿，笑书神侠倚碧鸳</h5><p> —————————————— 金庸</p>
+<p>☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞</p>
+<hr>
+<p><strong>人在江湖，身不由己；</strong><br><strong>情仇难却，恩怨无限。</strong><br>——————————-<strong>这就是江湖。</strong></p>
+<hr>
+<p>☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞</p>
+<p><strong>以前是戏捧人，现在是人捧戏。</strong></p>
+<h5 id="瑾以此文，祭奠那隐却的古装剧。"><a href="#瑾以此文，祭奠那隐却的古装剧。" class="headerlink" title="瑾以此文，祭奠那隐却的古装剧。"></a>瑾以此文，祭奠那隐却的古装剧。</h5><p>☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞☞</p>
+
+
+    <!-- 显示photos -->
+    
+
+  </div>
+  <div class="post-tags">
+    
+  </div>
+</article>
+  
+    <div class="post-nav">
+      <div class="post-nav-item post-nav-next">
+        
+          <a href="/2017/09/25/hello-world/" rel="next" title="高清精美无版权图片网站分享">
+            <span>〈 </span> 高清精美无版权图片网站分享
+          </a>
+        
+      </div>
+  
+      <div class="post-nav-item post-nav-prev">
+        
+          <a href="/2017/10/23/intelligence_talking/" rel="prev" title="所谓情商高 就是会说话">
+            所谓情商高 就是会说话 <span>〉</span>
+          </a>
+        
+      </div>
+    </div>
+  
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#《书剑恩仇录》"><span class="toc-text">《书剑恩仇录》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《飞狐外传》"><span class="toc-text">《飞狐外传》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《神雕侠侣》"><span class="toc-text">《神雕侠侣》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《鹿鼎记》"><span class="toc-text">《鹿鼎记》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《白发魔女传》"><span class="toc-text">《白发魔女传》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《绝代双骄》"><span class="toc-text">《绝代双骄》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《小李飞刀》（飞刀问情）"><span class="toc-text">《小李飞刀》（飞刀问情）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《碧血剑》"><span class="toc-text">《碧血剑》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《三少爷的剑》"><span class="toc-text">《三少爷的剑》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《乌龙闯情关》"><span class="toc-text">《乌龙闯情关》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《少年张三丰》"><span class="toc-text">《少年张三丰》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《侠客行》"><span class="toc-text">《侠客行》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《笑傲江湖》"><span class="toc-text">《笑傲江湖》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《风云-1》"><span class="toc-text">《风云 1》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《流星·蝴蝶·剑》"><span class="toc-text">《流星·蝴蝶·剑》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《水月洞天》"><span class="toc-text">《水月洞天》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《雪花女神龙》"><span class="toc-text">《雪花女神龙》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《萧十一郎》"><span class="toc-text">《萧十一郎》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《射雕英雄传》"><span class="toc-text">《射雕英雄传》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《倚天屠龙记》"><span class="toc-text">《倚天屠龙记》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《天龙八部》"><span class="toc-text">《天龙八部》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《风云-2》"><span class="toc-text">《风云 2》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《连城诀》"><span class="toc-text">《连城诀》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《天下第一》"><span class="toc-text">《天下第一》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《小鱼儿和花无缺》"><span class="toc-text">《小鱼儿和花无缺》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《雪山飞狐》"><span class="toc-text">《雪山飞狐》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#《射雕英雄传》-1"><span class="toc-text">《射雕英雄传》</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#金庸十四部"><span class="toc-text">金庸十四部</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#飞雪连天射白鹿，笑书神侠倚碧鸳"><span class="toc-text">飞雪连天射白鹿，笑书神侠倚碧鸳</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#瑾以此文，祭奠那隐却的古装剧。"><span class="toc-text">瑾以此文，祭奠那隐却的古装剧。</span></a></li></ol></li></ol>
+  </div>
+
+
+    </div>
+
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+</body>
+</html>

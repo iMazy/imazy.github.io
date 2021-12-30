@@ -1,34 +1,245 @@
-include mixins
 
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title>你所不知的小众定律 [ Mazy&#39;s Home ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+</head>
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item toc-menu">
+        <a id="menu-main-post" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/logo.png" alt="MENU">
+        </a>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mazy&#39;s Home</h1>
+      <!-- <span>The best revenge is massive success!</span> -->
+  </a>
+  <!-- 
+  <img class="logo" id="logo" src="/logo.png" alt="logo">
+   -->
+</nav>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      <article class="post" id="post">
+  <header class="post-header text-center">
+    <h1 class="title">
+      你所不知的小众定律
+    </h1>
+    
+    <time class="time" datetime="2020-02-27T03:50:45.352Z">
+      2020-02-27
+    </time>
+    
+    <hr>
+  </header>
+  <div class="post-content">
+    <p>错误定律</p>
+<ul>
+<li>别人都不对，那就是自己的错。</li>
+</ul>
+<p>效果定律</p>
+<ul>
+<li>在伤口上落泪和在伤口上撒盐，效果是一样的。</li>
+</ul>
+<p>嫉妒定律</p>
+<ul>
+<li>人们嫉妒的往往不是陌生人的飞黄腾达，而是身边的人飞黄腾达。</li>
+</ul>
+<p>方圆定律</p>
+<ul>
+<li>人不能太方，也不能太圆，一个会伤人，一个会让人远离你，因此人要椭圆。</li>
+</ul>
+<p>口水定律</p>
+<ul>
+<li>当你红得让人流口水时，关于你的口水就会多起来。</li>
+</ul>
+<p>利用定律</p>
+<ul>
+<li>不怕被人利用，就怕你没用。</li>
+</ul>
+<p>成就定律</p>
+<ul>
+<li>如果你没有成就，你就会因平庸而没有朋友；如果你有了成就，你就会因卓越而失去朋友。</li>
+</ul>
+<p>馅饼定律</p>
+<ul>
+<li>当天上掉下馅饼的时候，小心地上也有个陷阱在等着你。</li>
+</ul>
+<p>错误定律</p>
+<ul>
+<li>人们日常所犯的最大错误，是对陌生人太客气，而对亲密的人太苛刻。</li>
+</ul>
+<p>评价定律</p>
+<ul>
+<li>不必好奇别人怎样评价你，想想你是怎样评价他的。</li>
+</ul>
+<p>葱蒜定律</p>
+<ul>
+<li>太拿自己当根葱的人，往往特别善于：装蒜。</li>
+</ul>
+<p>流言定律</p>
+<ul>
+<li>流言是写在水上的字，注定不持久，但是又传得飞快。</li>
+</ul>
+<p>害怕定律</p>
+<ul>
+<li>生手怕熟手，熟手怕高手，高手怕失手。</li>
+</ul>
+<p>难过定律</p>
+<ul>
+<li>为你的难过而快乐的，是敌人；为你的快乐而快乐的，是朋友；为你的难过而难过的，就是那些该放进心里的人。</li>
+</ul>
+<p>傻瓜定律</p>
+<ul>
+<li>把人家都当傻瓜，那一定是自己傻到了家。</li>
+</ul>
+<p>吃亏定律</p>
+<ul>
+<li>只要你不认为自己吃了亏，别人也就一定没占着便宜。</li>
+</ul>
+<p>风雨定律</p>
+<ul>
+<li>爱情经得起风雨，却经不起平淡；友情经得起平淡，却经不起风雨！</li>
+</ul>
+
+
+    <!-- 显示photos -->
+    
+
+  </div>
+  <div class="post-tags">
+    
+  </div>
+</article>
+  
+    <div class="post-nav">
+      <div class="post-nav-item post-nav-next">
+        
+          <a href="/2019/09/17/UnfinishedLife/" rel="next" title="此生未完成">
+            <span>〈 </span> 此生未完成
+          </a>
+        
+      </div>
+  
+      <div class="post-nav-item post-nav-prev">
+        
+      </div>
+    </div>
+  
+
+
+
+    </div>
+
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+</body>
+</html>

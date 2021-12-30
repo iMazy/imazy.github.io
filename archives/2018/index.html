@@ -1,16 +1,215 @@
-extends partial/layout
 
-block site_title
-    !=  "归档 · " + config.title
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block description
-    - var desc = '归档页面 - ' + config.title;
-    meta(name="description", content=desc)
 
-block content
-    .autopagerize_page_element: .content
-      .archive.animated.fadeInDown
-        ul.list-with-title
-          include mixins
-          +postList()
-          +make_pager(__('prev'), __('next'))
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
+
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title>Archives: 2018 [ Mazy&#39;s Home ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+</head>
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+        <a id="menu-main" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/logo.png" alt="MENU">
+        </a>
+        <ul class="pure-menu-children">
+        
+          
+            <li class="pure-menu-item"><a href="/" class="pure-menu-link">首页</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/about" class="pure-menu-link">关于</a></li>
+            
+          
+      </ul>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mazy&#39;s Home</h1>
+      <!-- <span>The best revenge is massive success!</span> -->
+  </a>
+  <!--  -->
+</nav>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      
+
+  
+  
+    
+    
+    <section class="post page archives">
+      <h2 class="archive-year-wrap">
+        <a href="/archives/2018" class="archive-year">
+          2018
+        </a>
+      </h2>
+      <div class="archives">
+  
+  <div class="archive" >
+  <a class="post-go" href="/2018/12/24/EconomicEffect/">
+    <h6 class="title">
+      十大经济学效应
+    </h6>
+    <!-- <div class="excerpt">
+      <ul>
+<li>一、蝴蝶效应   </li>
+<li>二、木桶效应   </li>
+<li>三、青蛙效应   </li>
+<li>四、鳄鱼法则   </li>
+<li>五、羊群效应   </li>
+<li>六、鲶鱼效应</li>
+<li>七、马太效应</li>
+<li>八、破窗理论</li>
+<li>九、手表定律</li>
+<li>十、晕轮效应</li>
+</ul>
+    </div> -->
+  </a>
+  <div class="date">
+    12-24
+  </div>
+</div>
+
+  
+  
+  <div class="archive" >
+  <a class="post-go" href="/2018/12/24/womaninbeijing/">
+    <h6 class="title">
+      北京女子图鉴 - 文案摘录
+    </h6>
+    <!-- <div class="excerpt">
+      <p><img src="https://upload-images.jianshu.io/upload_images/1335668-d190e0f94a0323e4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="/images/1335668-d190e0f94a0323e4.jpg" alt></p>
+<ul>
+<li><strong>1、所有你糊弄的，你不重视的，你负能量处理的，不论多微小，都将作用在你的未来。在北京，你绝不会因为一分努力就能在国贸随便刷卡，也不可能因为两分努力就能体面地生活在三环里，你只有拿出十二分的努力才有机会在这里过上理想的生活，城市的每个夜晚，都有人在哭泣，未曾哭过长夜的人，不足以谈人生，昨天你流的汗，会换来的财富；今天，你吃的苦，会成为礼物；明天，唯有埋头苦干，才能昂首幸福。</strong></li>
+</ul>
+    </div> -->
+  </a>
+  <div class="date">
+    12-24
+  </div>
+</div>
+
+
+  </div></section>
+
+    </div>
+
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+</body>
+</html>

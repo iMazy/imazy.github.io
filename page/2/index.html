@@ -1,9 +1,268 @@
-extends partial/layout
-block content
-	.autopagerize_page_element: .content
-		- page.posts.each(function (item) {
-			include mixins
-			+make_post(item, false)
-		- })
-		include mixins
-		+make_pager(__('prev'), __('next'))
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
+
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title> [ Mazy&#39;s Home ]The best revenge is massive success!</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+</head>
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+        <a id="menu-main" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/logo.png" alt="MENU">
+        </a>
+        <ul class="pure-menu-children">
+        
+          
+            <li class="pure-menu-item actived"><a href="/" class="pure-menu-link">首页</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
+            
+          
+          
+            <li class="pure-menu-item"><a href="/about" class="pure-menu-link">关于</a></li>
+            
+          
+      </ul>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mazy&#39;s Home</h1>
+      <!-- <span>The best revenge is massive success!</span> -->
+  </a>
+  <!--  -->
+</nav>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      
+
+<div class="recent-posts">
+  
+  <article class="recent-post-item">
+    <!-- post-title -->
+    <div class="post-title">
+      <a class="title" href="/2017/09/27/no_ancient_costume_after _childhood/">
+        <h2>
+          童年之后 再无古装
+        </h2>
+      </a>
+
+      
+      <time class="time pr" datetime="2017-09-27T07:34:33.000Z">
+        2017-09-27
+      </time>
+      
+    </div>
+
+    <!-- post-excerpt -->
+    
+
+    <!-- post-footer -->
+    <div class="post-footer">
+      
+    </div>
+
+  </article>
+  
+  <article class="recent-post-item">
+    <!-- post-title -->
+    <div class="post-title">
+      <a class="title" href="/2017/09/25/hello-world/">
+        <h2>
+          高清精美无版权图片网站分享
+        </h2>
+      </a>
+
+      
+      <time class="time pr" datetime="2017-09-25T03:06:56.000Z">
+        2017-09-25
+      </time>
+      
+    </div>
+
+    <!-- post-excerpt -->
+    
+
+    <!-- post-footer -->
+    <div class="post-footer">
+      
+    </div>
+
+  </article>
+  
+  <article class="recent-post-item">
+    <!-- post-title -->
+    <div class="post-title">
+      <a class="title" href="/2017/09/22/excellent_website _recommendate/">
+        <h2>
+          优秀网站推荐
+        </h2>
+      </a>
+
+      
+      <time class="time pr" datetime="2017-09-22T03:39:24.000Z">
+        2017-09-22
+      </time>
+      
+    </div>
+
+    <!-- post-excerpt -->
+    
+
+    <!-- post-footer -->
+    <div class="post-footer">
+      
+    </div>
+
+  </article>
+  
+  <article class="recent-post-item">
+    <!-- post-title -->
+    <div class="post-title">
+      <a class="title" href="/2017/01/01/the_distant_redeemer/">
+        <h2>
+          遥远的救世主
+        </h2>
+      </a>
+
+      
+      <time class="time pr" datetime="2017-01-01T00:47:26.000Z">
+        2017-01-01
+      </time>
+      
+    </div>
+
+    <!-- post-excerpt -->
+    
+
+    <!-- post-footer -->
+    <div class="post-footer">
+      
+    </div>
+
+  </article>
+  
+</div>
+
+
+    </div>
+
+    
+      <nav class="page-nav text-center">
+          <a class="extend prev" rel="prev" href="/">&lt;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      </nav>
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+</body>
+</html>

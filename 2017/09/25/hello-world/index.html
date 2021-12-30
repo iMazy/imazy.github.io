@@ -1,34 +1,308 @@
-include mixins
 
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title>高清精美无版权图片网站分享 [ Mazy&#39;s Home ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/microb.css">
+    
+  
+</head>
+
+<body>
+  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+  <ul class="pure-menu-list float-r clearfix">
+    
+      <li class="pure-menu-item toc-menu">
+        <a id="menu-main-post" class="pure-menu-link" href="javascript:;">
+          <img class="menu-icon" src="/logo.png" alt="MENU">
+        </a>
+      </li>
+    
+  </ul>  
+  <a class="pure-menu-heading" href="/">
+      <h1 class="title">Mazy&#39;s Home</h1>
+      <!-- <span>The best revenge is massive success!</span> -->
+  </a>
+  <!-- 
+  <img class="logo" id="logo" src="/logo.png" alt="logo">
+   -->
+</nav>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      <article class="post" id="post">
+  <header class="post-header text-center">
+    <h1 class="title">
+      高清精美无版权图片网站分享
+    </h1>
+    
+    <time class="time" datetime="2017-09-25T03:06:56.000Z">
+      2017-09-25
+    </time>
+    
+    <hr>
+  </header>
+  <div class="post-content">
+    <p><strong>在生活和工作中，我们可能会遇到检索图片来辅助自己，比如说：</strong></p>
+<ul>
+<li>选择好的图片为文章插图</li>
+<li>选择好的图片作为电脑或手机的背景</li>
+<li>参照好的风景和人物图，可以增强你的拍摄技巧，找到自己喜欢的拍摄角度</li>
+<li>查看好的图片，提高自己的审美<br>……</li>
+</ul>
+<p><strong>下面是我收集和整理的精美图片资源</strong></p>
+<a id="more"></a>
+
+<h4 id="高图网"><a href="#高图网" class="headerlink" title="高图网"></a>高图网</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-8683d2550fd579d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>专注无版权限制的免费高清大图分享平台。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.gaoimg.com/" target="_blank" rel="noopener">http://www.gaoimg.com/</a></p>
+<hr>
+<h4 id="Gratisography"><a href="#Gratisography" class="headerlink" title="Gratisography"></a>Gratisography</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-4782e188b3e56d1f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>gratisography里面的图片每周都会更新，很多时尚流行的照片在里面，并且适合用在设计项目上。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.gratisography.com/" target="_blank" rel="noopener">http://www.gratisography.com/</a></p>
+<hr>
+<h4 id="别样网"><a href="#别样网" class="headerlink" title="别样网"></a>别样网</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-6e1af527f8aa9563.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>别样网，榜单中唯一一个位于中国大陆的网站，提供各个种类的无版权大尺寸图片下载，其中以风景图，场景图为主。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.ssyer.com/" target="_blank" rel="noopener">http://www.ssyer.com/</a></p>
+<hr>
+<h4 id="PicJumbo"><a href="#PicJumbo" class="headerlink" title="PicJumbo"></a>PicJumbo</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-df0c22bd96c46f8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>PicJumbo提供免费个人和商业使用的图像，照片质量很不错，非常适合用在界面设计或其它项目上。</p>
+</blockquote>
+<p>资源地址：<a href="https://picjumbo.com/" target="_blank" rel="noopener">https://picjumbo.com/</a></p>
+<hr>
+<h4 id="LifeOfPix"><a href="#LifeOfPix" class="headerlink" title="LifeOfPix"></a>LifeOfPix</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-0dc377c5945ad751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>提供免费高清图像素材，并且无版权限制，图片多为欧洲景观。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.lifeofpix.com/" target="_blank" rel="noopener">http://www.lifeofpix.com/</a></p>
+<hr>
+<h4 id="FreeImages"><a href="#FreeImages" class="headerlink" title="FreeImages"></a>FreeImages</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-01de2a1d4621fe07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>里面很多适合平面设计师、网页设计师使用的图像素材，均为免费下载，但需要注册成会员才能下。</p>
+</blockquote>
+<p>资源地址：<a href="http://cn.freeimages.com/" target="_blank" rel="noopener">http://cn.freeimages.com/</a></p>
+<hr>
+<h4 id="Unsplash"><a href="#Unsplash" class="headerlink" title="Unsplash"></a>Unsplash</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-26b70f7980df33f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>Unsplash 是一个分享免费高质量照片的网站，照片分辨率都挺大，而且都是真实的摄影师作品，图片多是风景和静物。该网站上的照片每10天更新10张，基本上是一天一张。</p>
+</blockquote>
+<p>资源地址：<a href="https://unsplash.com/" target="_blank" rel="noopener">https://unsplash.com/</a></p>
+<hr>
+<h4 id="PublicDomainArchive"><a href="#PublicDomainArchive" class="headerlink" title="PublicDomainArchive"></a>PublicDomainArchive</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-13b45090d684aed1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>目前已经有28万张免费高清图片供下载，网页设计师可以免费使用在你的设计项目上。作品每周更新，支持添加邮箱发送。</p>
+</blockquote>
+<p>资源地址：<a href="http://publicdomainarchive.com/" target="_blank" rel="noopener">http://publicdomainarchive.com/
+</a></p>
+<hr>
+<h4 id="Pexels"><a href="#Pexels" class="headerlink" title="Pexels"></a>Pexels</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-ba3cd7c2e7b7125c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>Pexels 是一个提供免费图片的好地方，网站整体看着很舒服。有摄影和剪贴画， 也是一个较大的照片网站，所以里面的内容相对来说就比较丰富。</p>
+</blockquote>
+<p>资源地址：<a href="https://www.pexels.com/" target="_blank" rel="noopener">https://www.pexels.com/</a></p>
+<hr>
+<h4 id="New-Old-Stock"><a href="#New-Old-Stock" class="headerlink" title="New Old Stock"></a>New Old Stock</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-a30b2580800e7704.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>New Old Stock 是一个特别的照片网站，该网站的作品基本是一些复古，古老，经典的照片。不过我试了下不翻墙看不到图片，所以想看图的同学们得多学学翻墙了。</p>
+</blockquote>
+<p>资源地址：<a href="http://nos.twnsnd.co/" target="_blank" rel="noopener">http://nos.twnsnd.co/</a></p>
+<hr>
+<h4 id="Pixabay"><a href="#Pixabay" class="headerlink" title="Pixabay"></a>Pixabay</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-441a633de0faaac0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>Pixabay 里面有67万张免费的不同类型的高清摄影照片，目前提供中文界面。</p>
+</blockquote>
+<p>资源地址：<a href="https://pixabay.com/" target="_blank" rel="noopener">https://pixabay.com/</a></p>
+<hr>
+<h4 id="Foter"><a href="#Foter" class="headerlink" title="Foter"></a>Foter</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-82b226d1d18daed6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>Foter 号称超过3亿免费高清图片供用户使用。进入首页之后也是一个搜索页，列表页也设计的不错。</p>
+</blockquote>
+<p>资源地址：<a href="http://foter.com/" target="_blank" rel="noopener">http://foter.com/</a></p>
+<hr>
+<h4 id="Photo-Pin"><a href="#Photo-Pin" class="headerlink" title="Photo Pin"></a>Photo Pin</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-d2a37c3f629b071c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>Photo Pin 其实是一个图片搜索引擎，里面的图片来源于Flickr。你可以使用英文或中文搜索，可结果会有所不同，利用切换语言来进行搜索，可以获得最符合需求的图像。</p>
+</blockquote>
+<p>资源地址：<a href="http://photopin.com/" target="_blank" rel="noopener">http://photopin.com/</a></p>
+<hr>
+<h4 id="站酷网"><a href="#站酷网" class="headerlink" title="站酷网"></a>站酷网</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-21f44b38f52efa27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>站酷网，中国最具人气的大型综合性”设计师社区”其中类型广泛，平面、UI、插画、摄影、工业/产品等应有尽有，国内一些知名的设计师也会在里面发布作品。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.zcool.com.cn/" target="_blank" rel="noopener">http://www.zcool.com.cn/</a></p>
+<hr>
+<h4 id="花瓣网"><a href="#花瓣网" class="headerlink" title="花瓣网"></a>花瓣网</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-1ada03953ff32927.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p>国内比较火的图片收集网站，同样类型广泛，且不仅限于设计类图片，设计者收集素材的圣地，可以随时随地收藏素材在自己的账号里，方便简约。</p>
+<p>资源地址：<a href="http://huaban.com/" target="_blank" rel="noopener">http://huaban.com/</a></p>
+<hr>
+<h4 id="设计癖"><a href="#设计癖" class="headerlink" title="设计癖"></a>设计癖</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-f3a422fd706c2eca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>网站的slogan是“帮你发现好设计”网站的主要格调似乎更多是生活中的设计和一些创意产品。网站内提供应招聘服务。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.shejipi.com/" target="_blank" rel="noopener">http://www.shejipi.com/</a></p>
+<hr>
+<h4 id="Behance"><a href="#Behance" class="headerlink" title="Behance"></a>Behance</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-79c5e38c7096e1e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>网站是展示和发现创意作品的在线平台，同时也是 Adobe 系列的一部分。Behance 的管理团队每天都会从各种领域中的顶级组合探索出新作品。这些领域包括设计、时尚、插图、工业设计、建筑、摄影、美术、广告、排版、动画、声效以及更多。</p>
+</blockquote>
+<p>资源地址：<a href="https://www.behance.net/" target="_blank" rel="noopener">https://www.behance.net/</a></p>
+<hr>
+<h4 id="Dribbble"><a href="#Dribbble" class="headerlink" title="Dribbble"></a>Dribbble</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-4a207e487657c1c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>你可以在这里看到好的设计作品，关注你喜欢的设计师，以及委托设计师（团队）为你设计；如果你有一家设计公司你还可以在此发现一些有潜力的年轻人为你工作。</p>
+</blockquote>
+<p>资源地址：<a href="https://dribbble.com/" target="_blank" rel="noopener">https://dribbble.com/</a></p>
+<hr>
+<h4 id="top6000"><a href="#top6000" class="headerlink" title="top6000"></a>top6000</h4><p><img src="http://upload-images.jianshu.io/upload_images/1335668-ddf4d7e54710dfdd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<blockquote>
+<p>缔造中国摄影作品分享与售卖的完美平台，隶属于北京金视野科技发展有限公司。</p>
+</blockquote>
+<p>资源地址：<a href="http://www.top6000.com/Index/faxian.html" target="_blank" rel="noopener">http://www.top6000.com/Index/faxian.html</a></p>
+
+
+    <!-- 显示photos -->
+    
+
+  </div>
+  <div class="post-tags">
+    
+  </div>
+</article>
+  
+    <div class="post-nav">
+      <div class="post-nav-item post-nav-next">
+        
+          <a href="/2017/09/22/excellent_website _recommendate/" rel="next" title="优秀网站推荐">
+            <span>〈 </span> 优秀网站推荐
+          </a>
+        
+      </div>
+  
+      <div class="post-nav-item post-nav-prev">
+        
+          <a href="/2017/09/27/no_ancient_costume_after _childhood/" rel="prev" title="童年之后 再无古装">
+            童年之后 再无古装 <span>〉</span>
+          </a>
+        
+      </div>
+    </div>
+  
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#高图网"><span class="toc-text">高图网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Gratisography"><span class="toc-text">Gratisography</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#别样网"><span class="toc-text">别样网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PicJumbo"><span class="toc-text">PicJumbo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LifeOfPix"><span class="toc-text">LifeOfPix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FreeImages"><span class="toc-text">FreeImages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Unsplash"><span class="toc-text">Unsplash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PublicDomainArchive"><span class="toc-text">PublicDomainArchive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pexels"><span class="toc-text">Pexels</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#New-Old-Stock"><span class="toc-text">New Old Stock</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Pixabay"><span class="toc-text">Pixabay</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Foter"><span class="toc-text">Foter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Photo-Pin"><span class="toc-text">Photo Pin</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#站酷网"><span class="toc-text">站酷网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#花瓣网"><span class="toc-text">花瓣网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计癖"><span class="toc-text">设计癖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Behance"><span class="toc-text">Behance</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dribbble"><span class="toc-text">Dribbble</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#top6000"><span class="toc-text">top6000</span></a></li></ol>
+  </div>
+
+
+    </div>
+
+    
+
+  </div>
+
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+      
+        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
+      
+        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
+      
+    </div>
+  </footer>
+  
+
+<script>
+  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
+</script>
+
+<script>
+  (function (window, document) {
+    window.requestAnimationFrame = (function () {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+
+    function init() {
+      addMenuEvent();
+    }
+    init();
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        menu.title = toc ? '目录' : '回到顶部';
+        menu.onclick = function () {
+          if (toc) {
+            if (toc.style.display == 'block') {
+              toc.style.display = 'none';
+            } else {
+              toc.style.display = 'block';
+            }
+          } else {
+            returnTop();
+          }
+        };
+      }
+    }
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+  })(window, document);
+</script>
+
+
+  
+
+
+
+</body>
+</html>
