@@ -1,294 +1,34 @@
+include mixins
 
-<!DOCTYPE html>
-<html lang="zh-CN">
+extends partial/layout
 
+block site_title
+    != page.title + " · " + config.title
 
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#202020">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  
-    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
-  
+block description
+    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
+    meta(name="description", content=desc)
 
-  
-    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
-  
-  
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-  <title>蒙牛教主牛根生 · 一生只做一件事 [ Mazy&#39;s Home ]</title>
-  
-    <!-- stylesheets list from config.yml -->
-    
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
-    
-      <link rel="stylesheet" href="/css/microb.css">
-    
-  
-</head>
-
-<body>
-  <nav class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-  <ul class="pure-menu-list float-r clearfix">
-    
-      <li class="pure-menu-item toc-menu">
-        <a id="menu-main-post" class="pure-menu-link" href="javascript:;">
-          <img class="menu-icon" src="/logo.png" alt="MENU">
-        </a>
-      </li>
-    
-  </ul>  
-  <a class="pure-menu-heading" href="/">
-      <h1 class="title">Mazy&#39;s Home</h1>
-      <!-- <span>The best revenge is massive success!</span> -->
-  </a>
-  <!-- 
-  <img class="logo" id="logo" src="/logo.png" alt="logo">
-   -->
-</nav>
-
-  <div class="container" id="content-outer">
-    <div class="inner" id="content-inner">
-      <article class="post" id="post">
-  <header class="post-header text-center">
-    <h1 class="title">
-      蒙牛教主牛根生 · 一生只做一件事
-    </h1>
-    
-    <time class="time" datetime="2017-11-26T07:13:58.000Z">
-      2017-11-26
-    </time>
-    
-    <hr>
-  </header>
-  <div class="post-content">
-    <p><img src="http://upload-images.jianshu.io/upload_images/1335668-109adfaa4f0669c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<hr>
-<h4 id="人物介绍"><a href="#人物介绍" class="headerlink" title="人物介绍"></a>人物介绍</h4><p>牛根生，蒙牛集团创始人，老牛基金会创始人、名誉会长，内蒙古师范大学教授，“全球捐股第一人”，入选“影响中国生活方式10大人物”。2002年中国十大创业风云人物之一。</p>
-<p>1958年生于呼和浩特。出生不久，为生活所迫，被生父母卖入养父母家。据牛根生亲自描述“因为吃不起饭，亲生父亲开价50块钱把我卖了。”由养母抚养14年。1978年参加工作，成为一名养牛工人；</p>
-<p>1983年进入乳业工厂，从基层干起，直至担任伊利集团生产经营副总裁（同时也是伊利创始团队成员），成为“中国冰淇淋大王”；</p>
-<p>1999年离开伊利，41岁创立蒙牛，后用短短8年时间，使蒙牛成为全球液态奶冠军、中国乳业总冠军,被誉为“蒙牛教主”。。蒙牛集团被全世界视作中国企业顽强崛起的标杆，“蒙牛现象”成为经济界最热门的专有名词之一。蒙牛产业链上联系着百万奶农、千万股民、数亿消费者，被誉为西部大开发以来“中国最大的造饭碗企业”，并被评为首届中国企业社会责任调查“最具社会责任感的企业”。</p>
-<p>他从小读书不多，没受过正规教育，却有着“财散人聚，财聚人散”的高超智慧。</p>
-<a id="more"></a>
-
-<hr>
-<h4 id="经历年表"><a href="#经历年表" class="headerlink" title="经历年表"></a>经历年表</h4><ul>
-<li>1958年生内蒙古</li>
-<li>1978年 成为呼和浩特大黑河牛奶厂的一名养牛工人</li>
-<li>1983年 进入内蒙古伊利集团（原呼和浩特回民奶食品厂）</li>
-<li>1992年 担任内蒙古伊利集团生产经营副总裁</li>
-<li>1998年 被内蒙古伊利集团免去生产经营副总裁一职</li>
-<li>1999年 创办内蒙古蒙牛乳业(集团)股份有限公司并担任董事长兼总裁职务</li>
-<li>2002年 获“中国十大创业风云人物”、“中国经济最有价值封面人物”、“中国民营工业行业领袖”等荣誉，蒙牛在全国乳制品企业中的排名由第1116位升至第4位</li>
-<li>2003年 获“中国企业新领袖”、CCTV“中国经济年度人物”称号</li>
-<li>2004年 赴港上市，获“中国策划最高奖”</li>
-<li>2004年底，牛根生捐出全部个人股份设立“老牛专项基金”，成为“中国捐股第一人”、“全球华人捐股第一人”</li>
-<li>2006年 辞去蒙牛集团总裁职务</li>
-<li>2009年8月28日牛根生辞任内蒙古蒙牛董事长，改由中粮集团总裁于旭波出任，但牛根生继续担任公司董事</li>
-<li>期间曾在北京大学深造，中国社会科学院研究生院工商管理硕士</li>
-<li>2011年6月10日蒙牛乳业发布公告称，创始人牛根生辞任董事会主席一职。他将保留非执行董事，并继续参与本集团之策略规划</li>
-</ul>
-<hr>
-<h4 id="经典语录"><a href="#经典语录" class="headerlink" title="经典语录"></a>经典语录</h4><ul>
-<li>小胜凭智，大胜靠德</li>
-<li>财散人聚，财聚人散</li>
-<li>老老实实做事，本本分分做人</li>
-<li>别人从零起步，而我从负数起步</li>
-<li>宁可为真话负罪，决不为假话开脱</li>
-<li>城市多喝一杯奶，农村致富一家人</li>
-<li>看别人不顺眼，首先是自己修养不够</li>
-<li>一个人快乐不是因为他拥有得多，而是因为计较得少</li>
-<li>我们提倡全民喝奶，但你不一定喝蒙牛奶，只要你喝奶就行</li>
-</ul>
-<hr>
-<h4 id="人物剖析"><a href="#人物剖析" class="headerlink" title="人物剖析"></a>人物剖析</h4><h5 id="厚积薄发"><a href="#厚积薄发" class="headerlink" title="厚积薄发"></a>厚积薄发</h5><blockquote>
-<p>每天进步一点，每天突破自我，就能走在前面</p>
-</blockquote>
-<ul>
-<li><p>吃苦耐劳，吃亏是福</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生出生不足满月，被卖给一家以养牛为生的牛姓人家，从此与牛结下了不解之缘；</span><br><span class="line">他从小尝尽世间冷暖，使他吃苦耐劳，坚强独立；</span><br><span class="line">养父母的勤劳品性和吃亏是福深深影响着牛根生。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>小忍大谋</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">牛根生在伊利服务了十几年，面临着“一山不容二虎”，被排挤的危机，主动提出离职；</span><br><span class="line">最终遵照公司决定停职进修。40岁的牛根生到北大光华管理学院读MBA,整天和一些比自己小很多的年轻人在一起；</span><br><span class="line">提升自己后，最终还是离开了伊利，此时被告之欠企业20万，外加去北大进修的2万学费；</span><br><span class="line">在此逆境下，他破釜沉舟，投入蒙牛事业；</span><br><span class="line">创业之初，收到伊利的刁难和封杀，他并没有针锋相对，而是小忍，打出“创内蒙古乳业第二品牌”的旗号，减少麻烦，积蓄实力；</span><br><span class="line">牛根生的小忍，成就了蒙牛的大谋略和大布局，获得了人民的认可，赢得了市场。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>宽以待人</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生成长在草原上，宽厚的胸怀浸染着他的灵魂，同时深深崇拜着草原英雄成吉思汗，对速度和扩张有一种痴迷；</span><br><span class="line">他在为人处世上坚持着“宽以待人”的原则，这种宽和的精神也深入到蒙牛文化的骨髓里；</span><br><span class="line">面对伊利，他强调：“草原品牌是一块，蒙牛伊利各一半。”，这种双赢和共赢精神，成就了蒙牛的发展。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>以柔克刚</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">面对对手的虎视眈眈和咄咄逼人，牛根生说：“如果不还手是掐不死的。只要一还手掐死的可能性是特别大的；</span><br><span class="line">当时挨打和挨骂是为了将来不挨打不挨骂，为了自己能够生存住、发展好；</span><br><span class="line">当你打了好几年，打的和骂的过程都经历了以后，就要学会怎么样不大能赢，怎么样不战能胜。”</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>粗中有细</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生天性粗犷豪放，但粗中有细，尽力要求完善每个工作细节；</span><br><span class="line">他提出口号：尊重人的品德，重视人的智慧，承认人的价值，珍惜人的感情，维护人的尊严，提高人的素质；</span><br><span class="line">牛根生以注重细节，成就了企业的稳定发展。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>毅力</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生，在创业初期，一无所有时没有回头；在遭受排挤时，没有迟疑；在打击恐吓之下，没有退后；</span><br><span class="line">他与自己较劲，不管发生什么，先从自身找原因，力求做到大家都满意；</span><br><span class="line">他不怨天由人，不自暴自弃。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>心怀天下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生说：做父母的好儿子，妻子的好丈夫，孩子的好父亲，只是做人的最低标准；</span><br><span class="line">当你不熟悉的人和跟你没有血缘关系的人，承认你或者熟悉你时，这才是社会价值；</span><br><span class="line">还说：我们提倡全民喝奶，但你不一定和蒙牛奶，只要你喝奶就行。</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<h5 id="个人魅力"><a href="#个人魅力" class="headerlink" title="个人魅力"></a>个人魅力</h5><blockquote>
-<p>这个世界，是有心人的世界</p>
-</blockquote>
-<ul>
-<li><p>用心</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生从洗瓶工到副总裁，已经是一个奇迹。而他又用很短时间，把蒙牛带成乳业巨头，更让人称奇；</span><br><span class="line">因为他有心，众人相信他的实力，所以在他离开时吸引一大批人个跟着他；</span><br><span class="line">因为他有心，才使蒙牛迅猛成长。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>影响力</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生推崇：超乎常人想象的关怀，是明智；超乎常人想象的冒险，是安全；超乎常人想象的梦想，是务实；超乎常人想象的期望，是可能；</span><br><span class="line">他用超乎常人的胸怀，塑造了自己的影响力，也带领蒙牛塑造了品牌影响力；</span><br><span class="line">他有牛的精神，踏实勤恳，不说空话；有狼的战斗力，认准目标，绝不回退；有鹰的敏锐，市场洞察力强，能瞄准突破口；有狮子的风范，实力强大，待人宽厚。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>以和为贵</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">蒙牛的价值观是：谁让别人赢，谁就能让自己赢。和谐是人类的最高追求，要在和谐中让企业良性发展；</span><br><span class="line">脾气嘴巴不好，心地再好也不算好人。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>诚信</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">诚信既是一种战略资源，也是一种世界观，一种方法论；</span><br><span class="line">信誉和下一步的核心竞争力；</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>财散人聚</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">财散人聚，舍去的是钱财，得到的是凝聚力。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>懂得分享</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一个人快乐不是因为他拥有多，而是因为计较的少；</span><br><span class="line">他分享信念，分享个人财富，成就了蒙牛，也成就了自己。</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<h5 id="虚心进取"><a href="#虚心进取" class="headerlink" title="虚心进取"></a>虚心进取</h5><blockquote>
-<p>不要耻于待遇不丰厚，而要耻于知识不渊博</p>
-</blockquote>
-<ul>
-<li><p>与自己较劲</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">牛根生从来不居功，不骄傲，总以平和的心态与自己较劲，在较劲中不断超越自己。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>每天自我更新</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">牛根生认为，优质生活的含义是：物质上共同富裕，精神上共同快乐；</span><br><span class="line">他喜欢锻炼身体，坚信有好的体力，才有好的脑力；</span><br><span class="line">他每一天都是在养性，养梦和养食中度过。养性，以保持心态平衡；养梦，以保持积极进取；养食，既是要多喝牛奶，强壮筋骨。</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料:"></a>参考资料:</h4><p><a href="http://product.dangdang.com/20820534.html" target="_blank" rel="noopener">《蒙牛教主牛根生》</a></p>
-<p><a href="https://baike.baidu.com/item/牛根生/954584?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
-<p><a href="http://www.yuedulu.com/t/1430/" target="_blank" rel="noopener">牛根生语录</a></p>
-
-
-    <!-- 显示photos -->
-    
-
-  </div>
-  <div class="post-tags">
-    
-  </div>
-</article>
-  
-    <div class="post-nav">
-      <div class="post-nav-item post-nav-next">
-        
-          <a href="/2017/10/23/changeQuestionsChangeLife/" rel="next" title="改变提问 改变人生">
-            <span>〈 </span> 改变提问 改变人生
-          </a>
-        
-      </div>
-  
-      <div class="post-nav-item post-nav-prev">
-        
-          <a href="/2017/12/18/howtoimproveEQ/" rel="prev" title="情商低的人如何提高情商">
-            情商低的人如何提高情商 <span>〉</span>
-          </a>
-        
-      </div>
-    </div>
-  
-
-
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#人物介绍"><span class="toc-text">人物介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#经历年表"><span class="toc-text">经历年表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#经典语录"><span class="toc-text">经典语录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#人物剖析"><span class="toc-text">人物剖析</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#厚积薄发"><span class="toc-text">厚积薄发</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#个人魅力"><span class="toc-text">个人魅力</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#虚心进取"><span class="toc-text">虚心进取</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料:</span></a></li></ol>
-  </div>
-
-
-    </div>
-
-    
-
-  </div>
-
-  <footer class="footer text-center">
-    <div id="bottom-inner">
-      
-        <a href="http://hexo.io" target="_blank" class="footer-link">Hexo</a>
-      
-        <a href="https://github.com/microacup/hexo-theme-micorb" target="_blank" class="footer-link">Theme microb</a>
-      
-    </div>
-  </footer>
-  
-
-<script>
-  var titleTime,originTitle=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="[闷声发大财中...] "+originTitle,clearTimeout(titleTime)):(document.title="[+1s] "+originTitle,titleTime=setTimeout(function(){document.title=originTitle},2e3))});
-</script>
-
-<script>
-  (function (window, document) {
-    window.requestAnimationFrame = (function () {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function (callback) {
-          setTimeout(callback, 1000 / 60);
-        }
-    })();
-
-    function init() {
-      addMenuEvent();
-    }
-    init();
-
-    function addMenuEvent() {
-      var menu = document.getElementById('menu-main-post');
-      if (menu) {
-        var toc = document.getElementById('toc');
-        menu.title = toc ? '目录' : '回到顶部';
-        menu.onclick = function () {
-          if (toc) {
-            if (toc.style.display == 'block') {
-              toc.style.display = 'none';
-            } else {
-              toc.style.display = 'block';
-            }
-          } else {
-            returnTop();
-          }
-        };
-      }
-    }
-
-    var timer = null;
-
-    function returnTop() {
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-        if (oTop > 0) {
-          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
-        }
-      });
-    }
-
-  })(window, document);
-</script>
-
-
-  
-
-
-
-</body>
-</html>
+block content
+  .autopagerize_page_element: .content: .post-page
+    include mixins
+    +make_post(page, true)
+    .share
+      .evernote
+        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
+      .weibo
+        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
+      .twitter
+        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
+    - var prev = page.prev ? page.prev.path : false;
+    - var next = page.next ? page.next.path : false;
+    .pagination
+      ul.clearfix
+        if prev
+          li.pre.pagbuttons
+            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
+        if next
+          li.next.pagbuttons
+            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+    if page.comments
+        include partial/comments
