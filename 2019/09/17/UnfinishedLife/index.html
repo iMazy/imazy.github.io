@@ -1,90 +1,34 @@
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-	
-	<title>此生未完成</title>
-	<meta name="keywords" content="imazy.cn, mazy, Mazy's blog">
+include mixins
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+extends partial/layout
 
-    
-	   <link href="/css/main.css?v=3" rel="stylesheet" type="text/css">
-    
-        <script src="/js/util.js"></script>
-        <script>
-            if(isMobile()) {
-                loadjscssfile('../css/mobile.css', 'css');
-            } else {
-                loadjscssfile('../css/desktop.css', 'css');
-            }
-        </script> 
-    
+block site_title
+    != page.title + " · " + config.title
 
-    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+block description
+    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
+    meta(name="description", content=desc)
 
-    
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3">
-    
-    
-
-</head>
-
-<body>
-
-
-<h2 class="title">此生未完成</h2>
-<!---
-<div style="text-align:center;margin-top: -10px;">
-<div class="article-category">
-发表于2019年9月17日
-
-
-
-
- </div>
---->
-</div>
-
-<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#作者简介"><span class="toc-text">作者简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#内容简介"><span class="toc-text">内容简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#经典语录"><span class="toc-text">经典语录</span></a></li></ol>
-<p><strong>一个母亲、妻子、女儿的生命日记</strong></p>
-<p><strong>我们要用多大的代价，才能认清活着的意义。</strong></p>
-<h4 id="作者简介"><a href="#作者简介" class="headerlink" title="作者简介"></a>作者简介</h4><p><strong>于娟</strong>，女，出生于1978年，祖籍山东济宁，海归，博士，复旦大学优秀青年教师，一个两岁孩子的母亲，乳腺癌晚期患者。</p>
-<h4 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h4><p>本书收录了作者作为一个母亲、妻子、女儿在与乳腺癌抗争时期写下的生命日记，包括癌症治疗的经历、对人生的理解、自己忙碌前半生的一些回忆与反思。文中感悟打动了许多读者，令人重新审视“<strong>活着的意</strong>义”。一个年轻生命，在生死的边缘，用生命写下病中日记。</p>
-<p>在生命的最后日子里，于娟完全放下了生死，放下了名利权情，赤裸裸的去反思和写作。所有的浮躁沉淀了，所有的伪装剥离了，所有的喧嚣远去了，所有的执着放下了。只有一个普通的女子，普通的女儿、妻子、母亲对生命最单纯的感悟。在这个故事里，很多读者看到的不是于娟，而是自己。</p>
-<h4 id="经典语录"><a href="#经典语录" class="headerlink" title="经典语录"></a>经典语录</h4><p>在生命零界点的时候，你会发现，任何的加班（长期熬夜等于慢性自杀），给自己太多的压力，买房买车的需求，这些都是浮云。如果有时间，好好陪陪你的孩子，把买车的钱给父母买双鞋子，不要拼命去换什么大房子，和相爱的人在一起，蜗居也温暖。    ———于娟</p>
-<p>透过生死，你会觉得名利权情都很虚无，尤其是首当其冲的名，说穿了，无非是别人茶余饭后的谈资。即使你名声四海皆知响彻云天，也无非是一时猎奇，各种各样的人揣着各种各样的心态唾沫四溅过后，你仍然是你，其实，你一直是你，只是别人在谈论你的时候，你忘记了你自己是谁而已。    ———于娟</p>
-<p>我不知道有没有机会育子成才，但可以用今天的行动告诉自己的孩子：你的妈妈不是懦夫，所以在你的人生里，遇到关键的人与珍贵的事，要积极争取，可以失败，但是不能放弃。  ———写给我的宝贝</p>
-<p>有太多的计划要完成，有太多的事情要应付，总是觉得等做好了手头的事情，陪父母也是来得及的。反正人生很长，时间很多。现在想想并不尽然，只有一天天的过，才是一年年，才是一辈子。无头绪的追逐与奔忙，一旦站定思考，发现半辈子已经过去，自己手里的成败并无多少意义，然后转身，才发现陪伴父母亲人的时间已然无多，发现最重要的幸福已然没有时间享用，人生最大的悲哀莫过如此。  ———于娟</p>
-<p>我的房间很小，我就把窗户开的很大。我的感情很重，我就把诺言许得很轻。我的往昔很空，我就把今天填的很满。我的喜悦很少，我就把笑容积得很多。  ———于娟</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">编辑感言</span><br><span class="line"></span><br><span class="line">即使你已经离去</span><br><span class="line">我依然能闻到你留下的春的气息</span><br><span class="line">你挥洒地写，悲与喜</span><br><span class="line">穿透死亡的恐惧，告诉人们生的意义</span><br><span class="line">离去，离去。</span><br><span class="line">在那四月花开的芬芳里，</span><br><span class="line">你那歌唱的魂灵</span><br><span class="line">在那风过云淡的天上</span><br><span class="line">尽情地自由地喃呢</span><br><span class="line"></span><br><span class="line">———谨以此文遥祭于娟</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p><strong>前半部非常值得一看</strong></p>
-
-
-<!--<a href="//imazy.cn/2019/09/17/UnfinishedLife/#disqus_thread" class="article-comment-link">Comments</a>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = ''; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
--->
-<div style="display:none">
-<script src="http://s4.cnzz.com/stat.php?id=&web_id=" language="JavaScript"></script>script>
-</div>
-
-
-
-
-
-
-</body>
-</html>
+block content
+  .autopagerize_page_element: .content: .post-page
+    include mixins
+    +make_post(page, true)
+    .share
+      .evernote
+        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
+      .weibo
+        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
+      .twitter
+        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
+    - var prev = page.prev ? page.prev.path : false;
+    - var next = page.next ? page.next.path : false;
+    .pagination
+      ul.clearfix
+        if prev
+          li.pre.pagbuttons
+            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
+        if next
+          li.next.pagbuttons
+            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+    if page.comments
+        include partial/comments
