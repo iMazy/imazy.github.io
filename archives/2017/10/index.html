@@ -1,16 +1,277 @@
-extends partial/layout
 
-block site_title
-    !=  "归档 · " + config.title
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-block description
-    - var desc = '归档页面 - ' + config.title;
-    meta(name="description", content=desc)
 
-block content
-    .autopagerize_page_element: .content
-      .archive.animated.fadeInDown
-        ul.list-with-title
-          include mixins
-          +postList()
-          +make_pager(__('prev'), __('next'))
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#202020">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+  
+  
+    <meta name="keywords" content="iOS,Swift,HTML,JavaScript,Developer,Programmer,Coder">
+  
+
+  
+    <meta name="description" content="A programmer who doesn&#39;t like a programmer">
+  
+  
+  <link rel="icon" type="image/x-icon" href="/logo.png">
+  <title>archives: 10/2017: 2017 [ Mazy&#39;s Home ]</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
+    
+      <link rel="stylesheet" href="/css/xoxo.css">
+    
+  
+</head>
+
+
+<body>
+  <div class="nav-container">
+    <nav class="home-menu pure-menu pure-menu-horizontal">
+  <a class="pure-menu-heading" href="/">
+    <img class="avatar" src="//imazy.cn/images/logo.png">
+    <span class="title">Mazy&#39;s Home</span>
+  </a>
+
+  <ul class="pure-menu-list clearfix">
+      
+          
+            <li class="pure-menu-item"><a href="/" class="pure-menu-link">首页</a></li>
+          
+      
+          
+            <li class="pure-menu-item actived"><a href="/archives" class="pure-menu-link">归档</a></li>
+          
+      
+          
+            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">标签</a></li>
+          
+      
+          
+            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">搜索</a></li>
+          
+      
+          
+            <li class="pure-menu-item"><a href="/about" class="pure-menu-link">关于</a></li>
+          
+      
+  </ul>
+   
+</nav>
+  </div>
+
+  <div class="container" id="content-outer">
+    <div class="inner" id="content-inner">
+      
+
+  
+  
+    
+    
+    <section class="post page archives">
+      <h3 class="archive-year-wrap">
+        <a href="/archives/2017" class="archive-year">
+          2017
+        </a>
+      </h3>
+      <div class="archives">
+  
+  <div class="archive" >
+  <a class="post-go" href="/2017/10/23/changeQuestionsChangeLife/">
+    <div>
+      <span class="date">
+        10-23
+      </span>
+      <span class="slash">/</span>
+      改变提问 改变人生
+    </div>
+
+    <!--<div class="excerpt">-->
+      <!--<p><img src="http://upload-images.jianshu.io/upload_images/1335668-499af13bbb8767ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h3 id="作者简介："><a href="#作者简介：" class="headerlink" title="作者简介："></a>作者简介：</h3><h4 id="梅若李·亚当斯（Marilee-Adams）"><a href="#梅若李·亚当斯（Marilee-Adams）" class="headerlink" title="梅若李·亚当斯（Marilee Adams）"></a>梅若李·亚当斯（Marilee Adams）</h4><p><strong>集高管教练、演说家及企业顾问于一身，现任探询学院（<a href="www.inquiryInstitute.com">www.inquiryInstitute.com</a>）院长及首席提问官。</strong></p>
+<p><strong>她服务过众多公司、医院和机构。深受好评！</strong></p>
+<hr>
+<h3 id="内容简介："><a href="#内容简介：" class="headerlink" title="内容简介："></a>内容简介：</h3><p>&nbsp;<strong>本书主通过主人公“奔”后期的人生的经历，阐述了“改变提问改变人生”这一观点。<br>奔在新的领导岗位上岌岌可危，同时遇新婚不到一年的妻子关系越来越紧张。在他一度觉得自己是个彻头彻尾的输家的时候，在他的领导“梅若李·亚当斯”推荐的“约瑟夫教授“的帮助下，奔发现自己的问题源于错误的思维方式，这种”批判者心态让他陷入了泥潭。为了逃离批判者旋涡，他试着用约瑟夫教授的”提问式思维“观察自己的想法和感受，探索达成有利结果的更好的问题。正确的问题引导他做了更明智的选择。”提问式思维”的工具和技能不但拯救了他的职业生涯，还拯救了他的婚姻。</strong></p>
+<p><strong>本书展示了通过关注并改变我们对自己及对他人提出的问题，来改变思维方式，进而改变具体行为的方法和工具。</strong></p>-->
+    <!--</div>-->
+  </a>
+
+</div>
+
+  
+  
+  <div class="archive" >
+  <a class="post-go" href="/2017/10/23/intelligence_talking/">
+    <div>
+      <span class="date">
+        10-23
+      </span>
+      <span class="slash">/</span>
+      所谓情商高 就是会说话
+    </div>
+
+    <!--<div class="excerpt">-->
+      <!--<p><img src="http://upload-images.jianshu.io/upload_images/1335668-c70f50f879129f69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><strong>说话不只是一种“感觉”，还是一门“技术”！就像烹饪有食谱一样，说话也有它的“秘方”；</strong></p>
+<p><strong>古往今来，但凡不通说话之道者，都难成大器，而能成事者，一定在语言方面具有独特的能力。</strong></p>-->
+    <!--</div>-->
+  </a>
+
+</div>
+
+
+  </div></section>
+
+    </div>
+
+    
+
+  </div>
+  <footer class="footer text-center">
+    <div id="bottom-inner">
+        <a class="bottom-item" href="http://imazy.cn">首页</a> |
+        <a class="bottom-item" href="http://imazy.cn" target="_blank">主站</a> |
+        <a class="bottom-item" href="https://github.com/iMazy" target="_blank">GitHub</a> |
+        <a class="bottom-item" href="https://hexo.io" target="_blank">Powered by hexo</a> |
+        <a class="bottom-item" href="https://github.com/KevinOfNeu/hexo-theme-xoxo" target="_blank">Theme xoxo</a>
+    </div>
+</footer>
+  
+
+<script>
+  (function(window, document, undefined) {
+
+    var timer = null;
+
+    function returnTop() {
+      cancelAnimationFrame(timer);
+      timer = requestAnimationFrame(function fn() {
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (oTop > 0) {
+          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+          timer = requestAnimationFrame(fn);
+        } else {
+          cancelAnimationFrame(timer);
+        }
+      });
+    }
+
+    var hearts = [];
+    window.requestAnimationFrame = (function() {
+      return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function(callback) {
+          setTimeout(callback, 1000 / 60);
+        }
+    })();
+    init();
+
+    function init() {
+      css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+      attachEvent();
+      gameloop();
+      addMenuEvent();
+    }
+
+    function gameloop() {
+      for (var i = 0; i < hearts.length; i++) {
+        if (hearts[i].alpha <= 0) {
+          document.body.removeChild(hearts[i].el);
+          hearts.splice(i, 1);
+          continue;
+        }
+        hearts[i].y--;
+        hearts[i].scale += 0.004;
+        hearts[i].alpha -= 0.013;
+        hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
+      }
+      requestAnimationFrame(gameloop);
+    }
+
+    /**
+     * 给logo设置点击事件
+     * 
+     * - 回到顶部
+     * - 出现爱心
+     */
+    function attachEvent() {
+      var old = typeof window.onclick === "function" && window.onclick;
+      var logo = document.getElementById("logo");
+      if (logo) {
+        logo.onclick = function(event) {
+          returnTop();
+          old && old();
+          createHeart(event);
+        }
+      }
+      
+    }
+
+    function createHeart(event) {
+      var d = document.createElement("div");
+      d.className = "heart";
+      hearts.push({
+        el: d,
+        x: event.clientX - 5,
+        y: event.clientY - 5,
+        scale: 1,
+        alpha: 1,
+        color: randomColor()
+      });
+      document.body.appendChild(d);
+    }
+
+    function css(css) {
+      var style = document.createElement("style");
+      style.type = "text/css";
+      try {
+        style.appendChild(document.createTextNode(css));
+      } catch (ex) {
+        style.styleSheet.cssText = css;
+      }
+      document.getElementsByTagName('head')[0].appendChild(style);
+    }
+
+    function randomColor() {
+      // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+      return "#F44336";
+    }
+
+    function addMenuEvent() {
+      var menu = document.getElementById('menu-main-post');
+      if (menu) {
+        var toc = document.getElementById('toc');
+        if (toc) {
+          menu.onclick = function() {
+            if (toc) {
+              if (toc.style.display == 'block') {
+                toc.style.display = 'none';
+              } else {
+                toc.style.display = 'block';
+              }
+            }
+          };
+        } else {
+          menu.style.display = 'none';
+        }
+      }
+    }
+
+  })(window, document);
+</script>
+
+  
+
+
+
+</body>
+</html>
