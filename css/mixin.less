@@ -1,18 +1,20 @@
 .tag-button {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 30px;
   display: inline-block;
-  height: 20px;
-  margin: 3px;
-  padding: 0 10px;
+  height: 30px;
+  margin: 5px;
   color: @gray;
-  border-radius: 3px;
+  border-radius: 15px;
   background: @bg-gray;
-  min-width: 30px;
+  min-width: 50px;
   text-align: center;
+  padding: 0 10px;
 
   a {
+    padding: 0 12px;
     color: @gray;
+    display: inline-block;
   }
   &:hover {
     color: @gray;
@@ -21,14 +23,16 @@
 }
 .post-page {
   background-color: #fff;
+  margin: 0 auto;
   max-width: @post-width;
-  width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   position: relative;
   @media screen and (min-width: @sm-width) {
-    padding: 10px 50px;
+    padding: 0 60px;
   }
-  @media (max-width: @sm-width) {
-    padding: 10px 50px;
-  }
+  // @media screen and (min-width: @post-width) {
+  //   border: 1px solid @border-dark-gray;
+  //   border-top: none;
+  //   box-shadow: 0 2px 3px rgba(32, 32, 32, .05);
+  // }
 }

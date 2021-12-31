@@ -102,26 +102,20 @@ em {
 }
 
 footer {
-  width: 60%;
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
-  border-top: 0.5px solid #eee;
-  padding-bottom: 1rem!important;
-  padding-top: 1rem!important;
-  margin-top: 2rem!important;
-  color: @gray-light;
+  border-top: 1px solid #eee;
+  padding-bottom: 1.5rem!important;
+  padding-top: 1.5rem!important;
+  margin-top: 1rem!important;
+  color: @gray;
   font-size: 12px;
   position: relative;
   z-index: 1024;
-  .bottom-item {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .bottom-item:hover {
-    color: @light-blue;
-  }
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .clearfix:before,
@@ -139,15 +133,14 @@ footer {
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 
 /* 滚动槽 */
 
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 4px;
 }
 
 
@@ -155,18 +148,9 @@ footer {
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, .1);
-  border-radius: 10px;
-  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, .3);
-  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
-}
-
-::selection {
-  background: #64B5F6;
-  color: #fff;
 }
