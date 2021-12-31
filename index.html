@@ -1,55 +1,64 @@
-extends base
-
-block title
-  if config.subtitle
-    title= config.title + ' | ' + config.subtitle
-  else
-    title= config.title
-
-block content
-  for post in page.posts.toArray()
-    .post
-      h1.post-title
-        include _partial/helpers.pug
-        a(href=url_for(post.path))
-          +title(post)
-      .post-meta= post.date.format(config.date_format)
-      if theme.disqus
-        a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
-      if theme.changyan
-        a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
-          span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
-          span= ' ' + __('Comment')
-      if post.description
-        .post-content
-          != post.description
-      else if post.excerpt
-        .post-content
-          != post.excerpt
-      else if post.content
-        - var br = 0
-        - for (var i = 0; i < 5; ++i) {
-          - br = post.content.indexOf('\n',br+1)
-          if br<0
-            - break
-          if br >150
-            - break
-        - }
-        if br < 0
-          .post-content
-            != post.content
-        else
-          .post-content
-            != post.content.substring(0, br)
-      p(class='readmore')
-        a(href=url_for(post.path))= __('Readmore')
-
-  include _partial/paginator.pug
-  if theme.disqus
-    script(id='dsq-count-scr', src='//'+ theme.disqus + '.disqus.com/count.js', async)
-  if theme.changyan
-    script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=' + theme.changyan, async)
-  if config.mathjax
-    include _partial/mathjax.pug
-  if config.mathjax2
-    include _partial/mathjax2.pug
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="A programmer who doesn't like a programmer"><title>Mazy's Home | The best revenge is massive success!</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Mazy's Home</h1><a id="logo" href="/.">Mazy's Home</a><p class="description">The best revenge is massive success!</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title"><a href="/2021/12/31/yearSummary2021/">2021年终总结</a></h1><div class="post-meta">2021-12-31</div><a class="disqus-comment-count" data-disqus-identifier="2021/12/31/yearSummary2021/" href="/2021/12/31/yearSummary2021/#disqus_thread"></a><div class="post-content"><ul>
+<li>一、 </li>
+<li>二、</li>
+<li>三、</li>
+<li>四、</li>
+<li>五、</li>
+<li>六、</li>
+<li>七、</li>
+<li>八、</li>
+<li>九、</li>
+<li>十、</li>
+</ul></div><p class="readmore"><a href="/2021/12/31/yearSummary2021/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2020/02/27/smallLaw/">你所不知的小众定律</a></h1><div class="post-meta">2020-02-27</div><a class="disqus-comment-count" data-disqus-identifier="2020/02/27/smallLaw/" href="/2020/02/27/smallLaw/#disqus_thread"></a><div class="post-content"><p>错误定律</p>
+<ul>
+<li>别人都不对，那就是自己的错。</li>
+</ul>
+<p>效果定律</p></div><p class="readmore"><a href="/2020/02/27/smallLaw/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2019/09/17/UnfinishedLife/">此生未完成</a></h1><div class="post-meta">2019-09-17</div><a class="disqus-comment-count" data-disqus-identifier="2019/09/17/UnfinishedLife/" href="/2019/09/17/UnfinishedLife/#disqus_thread"></a><div class="post-content"><p><strong>一个母亲、妻子、女儿的生命日记</strong></p>
+<p><strong>我们要用多大的代价，才能认清活着的意义。</strong></p>
+<h4 id="作者简介"><a href="#作者简介" class="headerlink" title="作者简介"></a>作者简介</h4><p><strong>于娟</strong>，女，出生于1978年，祖籍山东济宁，海归，博士，复旦大学优秀青年教师，一个两岁孩子的母亲，乳腺癌晚期患者。</p></div><p class="readmore"><a href="/2019/09/17/UnfinishedLife/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2018/12/24/EconomicEffect/">十大经济学效应</a></h1><div class="post-meta">2018-12-24</div><a class="disqus-comment-count" data-disqus-identifier="2018/12/24/EconomicEffect/" href="/2018/12/24/EconomicEffect/#disqus_thread"></a><div class="post-content"><ul>
+<li>一、蝴蝶效应   </li>
+<li>二、木桶效应   </li>
+<li>三、青蛙效应   </li>
+<li>四、鳄鱼法则   </li>
+<li>五、羊群效应   </li>
+<li>六、鲶鱼效应</li>
+<li>七、马太效应</li>
+<li>八、破窗理论</li>
+<li>九、手表定律</li>
+<li>十、晕轮效应</li>
+</ul></div><p class="readmore"><a href="/2018/12/24/EconomicEffect/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2018/12/24/womaninbeijing/">北京女子图鉴 - 文案摘录</a></h1><div class="post-meta">2018-12-24</div><a class="disqus-comment-count" data-disqus-identifier="2018/12/24/womaninbeijing/" href="/2018/12/24/womaninbeijing/#disqus_thread"></a><div class="post-content"><p><img src="https://upload-images.jianshu.io/upload_images/1335668-d190e0f94a0323e4.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p><img src="/images/1335668-d190e0f94a0323e4.jpg" alt></p>
+<ul>
+<li><strong>1、所有你糊弄的，你不重视的，你负能量处理的，不论多微小，都将作用在你的未来。在北京，你绝不会因为一分努力就能在国贸随便刷卡，也不可能因为两分努力就能体面地生活在三环里，你只有拿出十二分的努力才有机会在这里过上理想的生活，城市的每个夜晚，都有人在哭泣，未曾哭过长夜的人，不足以谈人生，昨天你流的汗，会换来的财富；今天，你吃的苦，会成为礼物；明天，唯有埋头苦干，才能昂首幸福。</strong></li>
+</ul></div><p class="readmore"><a href="/2018/12/24/womaninbeijing/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2017/12/24/bestADIn2017/">2017年走心广告文案分享</a></h1><div class="post-meta">2017-12-24</div><a class="disqus-comment-count" data-disqus-identifier="2017/12/24/bestADIn2017/" href="/2017/12/24/bestADIn2017/#disqus_thread"></a><div class="post-content"><ul>
+<li>好的广告，就是能猝不及防的触动你，然后还让你念念不忘</li>
+<li>很多走心的洞察和沟通，都让人印象深刻</li>
+<li>正如 2017 年的流行语所说，扎心了，老铁</li>
+</ul>
+<h3 id="网易云音乐联合农夫山泉"><a href="#网易云音乐联合农夫山泉" class="headerlink" title="网易云音乐联合农夫山泉"></a>网易云音乐联合农夫山泉</h3><hr>
+<iframe width="560" height="315" src="https://www.zhihu.com/video/918840671438266368" frameborder="0" allowfullscreen></iframe></div><p class="readmore"><a href="/2017/12/24/bestADIn2017/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2017/12/23/howToControYourTime/">如何掌控你的自由时间 - From TED</a></h1><div class="post-meta">2017-12-23</div><a class="disqus-comment-count" data-disqus-identifier="2017/12/23/howToControYourTime/" href="/2017/12/23/howToControYourTime/#disqus_thread"></a><div class="post-content"><hr>
+<p><object width="640" height="360"><param name="movie" value="http://swf.ws.126.net/openplayer/v01/-0-2_MC82BCQAN_MC8U8L3IB-vimg1_ws_126_net//image/snapshot_movie/2017/1/I/C/MC8U8L3IC-1423031805654.swf?isTEDPlay=1"><param name="allowScriptAccess" value="always"><param name="wmode" value="transparent"><embed src="http://swf.ws.126.net/openplayer/v01/-0-2_MC82BCQAN_MC8U8L3IB-vimg1_ws_126_net//image/snapshot_movie/2017/1/I/C/MC8U8L3IC-1423031805654.swf?isTEDPlay=1" type="application/x-shockwave-flash" width="640" height="360" allowfullscreen="true" wmode="transparent" allowscriptaccess="always"></object></p>
+<hr>
+<h3 id="内容简介："><a href="#内容简介：" class="headerlink" title="内容简介："></a>内容简介：</h3><ul>
+<li>将时间花在重要的事情上</li>
+<li>不存在没有时间的说法，没有时间做某事 == 该事不重要</li>
+<li>我们无法创造出更多的时间，但时间可以得到充分的利用</li>
+<li>并不是通过节省时间创造想要的生活，而是先创造想要的生活, 然后时间就自动节约下来了</li>
+</ul></div><p class="readmore"><a href="/2017/12/23/howToControYourTime/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2017/12/18/howtoimproveEQ/">情商低的人如何提高情商</a></h1><div class="post-meta">2017-12-18</div><a class="disqus-comment-count" data-disqus-identifier="2017/12/18/howtoimproveEQ/" href="/2017/12/18/howtoimproveEQ/#disqus_thread"></a><div class="post-content"><p>文章转载自知乎 <a href="https://www.zhihu.com/people/zhang-zheng-peng-26" target="_blank" rel="noopener">RIchKing</a> 的：<a href="https://www.zhihu.com/question/24565276/answer/111276894?utm_medium=social&utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">情商低的人如何提高情商？</a></p>
+<hr>
+<p><strong>1，话别说太满，人别熟太快。</strong></p>
+<p><strong>2，别人自嘲可以，但你千万别附和。</strong></p>
+<p><strong>3，不要把别人想得太坏，也不要把别人想得太好，都是凡人。</strong></p>
+<p><strong>4，可以嘲笑你的朋友，但不能嘲笑他喜欢的东西。</strong></p>
+<p><strong>5，把每一句“我不会”都改成“我可以学”。</strong></p></div><p class="readmore"><a href="/2017/12/18/howtoimproveEQ/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2017/11/26/mengniujiaozhu/">蒙牛教主牛根生 · 一生只做一件事</a></h1><div class="post-meta">2017-11-26</div><a class="disqus-comment-count" data-disqus-identifier="2017/11/26/mengniujiaozhu/" href="/2017/11/26/mengniujiaozhu/#disqus_thread"></a><div class="post-content"><p><img src="http://upload-images.jianshu.io/upload_images/1335668-109adfaa4f0669c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<hr>
+<h4 id="人物介绍"><a href="#人物介绍" class="headerlink" title="人物介绍"></a>人物介绍</h4><p>牛根生，蒙牛集团创始人，老牛基金会创始人、名誉会长，内蒙古师范大学教授，“全球捐股第一人”，入选“影响中国生活方式10大人物”。2002年中国十大创业风云人物之一。</p>
+<p>1958年生于呼和浩特。出生不久，为生活所迫，被生父母卖入养父母家。据牛根生亲自描述“因为吃不起饭，亲生父亲开价50块钱把我卖了。”由养母抚养14年。1978年参加工作，成为一名养牛工人；</p>
+<p>1983年进入乳业工厂，从基层干起，直至担任伊利集团生产经营副总裁（同时也是伊利创始团队成员），成为“中国冰淇淋大王”；</p>
+<p>1999年离开伊利，41岁创立蒙牛，后用短短8年时间，使蒙牛成为全球液态奶冠军、中国乳业总冠军,被誉为“蒙牛教主”。。蒙牛集团被全世界视作中国企业顽强崛起的标杆，“蒙牛现象”成为经济界最热门的专有名词之一。蒙牛产业链上联系着百万奶农、千万股民、数亿消费者，被誉为西部大开发以来“中国最大的造饭碗企业”，并被评为首届中国企业社会责任调查“最具社会责任感的企业”。</p>
+<p>他从小读书不多，没受过正规教育，却有着“财散人聚，财聚人散”的高超智慧。</p></div><p class="readmore"><a href="/2017/11/26/mengniujiaozhu/">阅读全文</a></p></div><div class="post"><h1 class="post-title"><a href="/2017/10/23/changeQuestionsChangeLife/">改变提问 改变人生</a></h1><div class="post-meta">2017-10-23</div><a class="disqus-comment-count" data-disqus-identifier="2017/10/23/changeQuestionsChangeLife/" href="/2017/10/23/changeQuestionsChangeLife/#disqus_thread"></a><div class="post-content"><p><img src="http://upload-images.jianshu.io/upload_images/1335668-499af13bbb8767ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h3 id="作者简介："><a href="#作者简介：" class="headerlink" title="作者简介："></a>作者简介：</h3><h4 id="梅若李·亚当斯（Marilee-Adams）"><a href="#梅若李·亚当斯（Marilee-Adams）" class="headerlink" title="梅若李·亚当斯（Marilee Adams）"></a>梅若李·亚当斯（Marilee Adams）</h4><p><strong>集高管教练、演说家及企业顾问于一身，现任探询学院（<a href="www.inquiryInstitute.com">www.inquiryInstitute.com</a>）院长及首席提问官。</strong></p>
+<p><strong>她服务过众多公司、医院和机构。深受好评！</strong></p>
+<hr>
+<h3 id="内容简介："><a href="#内容简介：" class="headerlink" title="内容简介："></a>内容简介：</h3><p>&nbsp;<strong>本书主通过主人公“奔”后期的人生的经历，阐述了“改变提问改变人生”这一观点。<br>奔在新的领导岗位上岌岌可危，同时遇新婚不到一年的妻子关系越来越紧张。在他一度觉得自己是个彻头彻尾的输家的时候，在他的领导“梅若李·亚当斯”推荐的“约瑟夫教授“的帮助下，奔发现自己的问题源于错误的思维方式，这种”批判者心态让他陷入了泥潭。为了逃离批判者旋涡，他试着用约瑟夫教授的”提问式思维“观察自己的想法和感受，探索达成有利结果的更好的问题。正确的问题引导他做了更明智的选择。”提问式思维”的工具和技能不但拯救了他的职业生涯，还拯救了他的婚姻。</strong></p>
+<p><strong>本书展示了通过关注并改变我们对自己及对他人提出的问题，来改变思维方式，进而改变具体行为的方法和工具。</strong></p></div><p class="readmore"><a href="/2017/10/23/changeQuestionsChangeLife/">阅读全文</a></p></div><nav class="page-navigator"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a></nav><script id="dsq-count-scr" src="//Mazy.disqus.com/count.js" async></script></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://imazy.cn"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/12/31/yearSummary2021/">2021年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/02/27/smallLaw/">你所不知的小众定律</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/09/17/UnfinishedLife/">此生未完成</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/24/EconomicEffect/">十大经济学效应</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/24/womaninbeijing/">北京女子图鉴 - 文案摘录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/24/bestADIn2017/">2017年走心广告文案分享</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/23/howToControYourTime/">如何掌控你的自由时间 - From TED</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/18/howtoimproveEQ/">情商低的人如何提高情商</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/26/mengniujiaozhu/">蒙牛教主牛根生 · 一生只做一件事</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/23/changeQuestionsChangeLife/">改变提问 改变人生</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//Mazy.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">Mazy's Home.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
