@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://imazy.cn/2023/10/14/important_with_hobby/</loc>
+    
+    <lastmod>2023-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://imazy.cn/2022/05/15/aboutTime/</loc>
     
     <lastmod>2022-05-15</lastmod>
@@ -166,7 +175,7 @@
 
   <url>
     <loc>http://imazy.cn/</loc>
-    <lastmod>2022-05-15</lastmod>
+    <lastmod>2023-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
