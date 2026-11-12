@@ -1,0 +1,17 @@
+<%-
+/* ============================================================
+   layout/_partial/header.ejs — 对应原主题输出 <header class="header"> 的模板
+   变更：补 RSS 入口与手动深浅色切换按钮；logo 用 config.title
+   ============================================================ */
+'' %>
+<header class="header">
+  <section class="header-container">
+    <a class="logo" href="<%- url_for('/') %>"><%= config.title %></a>
+    <ul class="nav" aria-label="主导航">
+      <li><a href="<%- url_for('/archives') %>">archives</a></li>
+      <li><a href="<%- url_for('/about') %>">about</a></li>
+      <li><a class="rss" href="<%- url_for('/atom.xml') %>">RSS</a></li>
+      <li><button class="theme-toggle" type="button" aria-label="切换深浅色" aria-pressed="false">深色</button></li>
+    </ul>
+  </section>
+</header>

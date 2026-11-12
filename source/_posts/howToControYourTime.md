@@ -1,0 +1,59 @@
+---
+title: "TED -「如何掌控你的自由时间」"
+date: 2021-12-31 23:32:05
+updated: 2025-07-11 21:53:34
+comments: true
+categories:
+  - "认知思考"
+tags:
+  - "TED"
+  - "时间管理"
+  - "效率"
+excerpt: "将时间花在重要的事情上 不存在没有时间的说法，没有时间做某事 &#x3D;&#x3D; 该事不重要 我们无法创造出更多的时间，但时间可以得到充分的利用 并不是通过节省时间创造想要的生活，而是先创造想要的生活, 然后时间就自动节约下来了"
+---
+
+<ul>
+<li>将时间花在重要的事情上</li>
+<li>不存在没有时间的说法，没有时间做某事 &#x3D;&#x3D; 该事不重要</li>
+<li>我们无法创造出更多的时间，但时间可以得到充分的利用</li>
+<li>并不是通过节省时间创造想要的生活，而是先创造想要的生活, 然后时间就自动节约下来了</li>
+</ul>
+<span id="more"></span>
+
+<hr>
+<h3 id="主要语录"><a href="#主要语录" class="headerlink" title="主要语录"></a>主要语录</h3><h4 id="节省时间实例："><a href="#节省时间实例：" class="headerlink" title="节省时间实例："></a>节省时间实例：</h4><p><strong>把喜欢的节目录下来</strong><br><code>Is to DVR your favorite shows</code></p>
+<p><strong>这样就能快进广告</strong><br><code>so you can fast-forward through the commercials</code></p>
+<p><strong>通过这个办法，每半小时能节省八分钟</strong><br><code>that way, you save eight minutes every half hour</code></p>
+<p><strong>那么在看两小时电视的过程中</strong><br><code>so in the course of two hours of watching TV</code></p>
+<p><strong>就有了三十二分钟来锻炼</strong><br><code>you find 32 minutes to exercise</code></p>
+<p><strong>可你知道找出三十二分钟锻炼的另一种方法吗？</strong><br><code>you know another way to find 32 minutes to exercise?</code></p>
+<p><strong>就是一天不要看两小时的电视</strong><br><code>Don&#39;t watch two hours of TV a day, right?</code></p>
+<hr>
+<p><strong>总之，这个理论就是我们把节省零散的时间加起来</strong><br><code>Anyway, the idea is we&#39;ll save bits of time here and there, add it up</code></p>
+<p><strong>最终就能够做到我们想做的所有事情</strong><br><code>we will finally get to everything we want to do</code></p>
+<p><strong>但是在研究了成功人士如何使用时间之后</strong><br><code>But after studying how successful people spend their time</code></p>
+<p><strong>并且逐个小时审查了他们的日程表</strong><br><code>and looking at their schedules hour by hour</code></p>
+<p><strong>我认为这个理论已经彻底落后了</strong><br><code>I think this idea has it completely backward</code></p>
+<p><strong>并不是通过节省时间创造想要的生活</strong><br><code>We don&#39;t build the lives we want by saving time.</code></p>
+<p><strong>而是先创造想要的生活, 然后时间就自动节约下来了</strong><br><code>We build the lives we want, and then time saves itself.</code></p>
+<p><strong>时间的弹性是很强的</strong><br><code>And what this shows us is that time is highly elastic</code></p>
+<p><strong>我们无法创造出更多的时间</strong><br><code>We cannot make more time,</code></p>
+<p><strong>但时间可以得到充分的利用</strong><br><code>but time will stretch to accommodate(适应)</code></p>
+<p><strong>这取决于我们选择用时间来做什么</strong><br><code>what we choose to put into it</code></p>
+<p><strong>所以时间管理的关键就是对待重要的事</strong><br><code>And so the key to time management is treating our priorities(优先顺序)</code></p>
+<hr>
+<h4 id="成功人士时间思想"><a href="#成功人士时间思想" class="headerlink" title="成功人士时间思想"></a>成功人士时间思想</h4><p><strong>我做的每件事，花的每一分钟，都是我的选择</strong><br><code>Everything I do, erery minute I speed, is my choice.</code></p>
+<p><strong>我没做甲乙丙丁， 是因为那不是最重要的事</strong><br><code>I don&#39;t do x, y or z, because it&#39;s not a priority.</code></p>
+<p><strong>“我没时间” 通常意味着 “这事不重要”</strong><br><code>&quot;I don&#39;t have time,&quot; often means &quot;It&#39;s not a priority.&quot;</code></p>
+<p><strong>我没时间 &#x3D; 这事不重要</strong><br><code>I don&#39;t have time  = It&#39;s not a priority</code></p>
+<p><strong>因此我可以承认这不是时间不够的问题</strong><br><code>I can acknowledge this is not a matter of lacking time;</code></p>
+<p><strong>而是我不想去做</strong><br><code>it&#39;s that I don&#39;t want to do it.</code></p>
+<p><strong>使用这种说法能提醒我们 时间是选择</strong><br><code>Using this language reminds us that time is a choice.</code></p>
+<p><strong>我们如何对待重要的事情</strong><br><code>How do we treat our priorities</code></p>
+<hr>
+<h4 id="最后总结"><a href="#最后总结" class="headerlink" title="最后总结"></a>最后总结</h4><p><strong>我真心相信这一点</strong><br><code>I truly believe this.</code></p>
+<p><strong>时间总是有的</strong><br><code>There is time.</code></p>
+<p><strong>就算我们再忙</strong><br><code>Even if we are busy,</code></p>
+<p><strong>还是有时间做重要的事</strong><br><code>we have time for what matters.</code></p>
+<p><strong>而当我们关注重要的事情时</strong><br><code>And when we focus on what matters,</code></p>
+<p><strong>我们就能用我们拥有的时间打造我们想要的生活。</strong><br><code>we can build the lives we want in the time we&#39;ve got.</code></p>

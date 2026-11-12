@@ -1,0 +1,117 @@
+---
+title: "优秀网站推荐"
+date: 2021-12-31 23:30:22
+updated: 2025-07-11 21:53:34
+comments: true
+categories:
+  - "资源分享"
+tags:
+  - "网站推荐"
+  - "技术"
+  - "工具"
+excerpt: "美团点评技术团队： http://tech.meituan.com/ WWDC视频 https://developer.apple.com/videos/"
+---
+
+<h4 id="美团点评技术团队："><a href="#美团点评技术团队：" class="headerlink" title="美团点评技术团队："></a>美团点评技术团队：</h4><ul>
+<li><a href="http://tech.meituan.com/">http://tech.meituan.com/</a></li>
+</ul>
+<h4 id="WWDC视频"><a href="#WWDC视频" class="headerlink" title="WWDC视频"></a>WWDC视频</h4><ul>
+<li><a href="https://developer.apple.com/videos/">https://developer.apple.com/videos/</a></li>
+</ul>
+<span id="more"></span>
+
+<h4 id="李忠的技术博客，现就职于蘑菇街"><a href="#李忠的技术博客，现就职于蘑菇街" class="headerlink" title="李忠的技术博客，现就职于蘑菇街:"></a>李忠的技术博客，现就职于蘑菇街:</h4><ul>
+<li><a href="http://limboy.me/">http://limboy.me/</a></li>
+</ul>
+<h4 id="少数派"><a href="#少数派" class="headerlink" title="少数派"></a>少数派</h4><ul>
+<li><a href="https://sspai.com/">https://sspai.com/</a></li>
+</ul>
+<h4 id="类似于“善用佳软”，“小众软件”这样的网站有哪些？"><a href="#类似于“善用佳软”，“小众软件”这样的网站有哪些？" class="headerlink" title="类似于“善用佳软”，“小众软件”这样的网站有哪些？"></a>类似于“善用佳软”，“小众软件”这样的网站有哪些？</h4><ul>
+<li><a href="https://www.zhihu.com/question/20337292">https://www.zhihu.com/question/20337292</a></li>
+</ul>
+<h4 id="NEXT-不错过任何一个新产品"><a href="#NEXT-不错过任何一个新产品" class="headerlink" title="NEXT | 不错过任何一个新产品"></a>NEXT | 不错过任何一个新产品</h4><ul>
+<li><a href="http://next.36kr.com/posts">http://next.36kr.com/posts</a></li>
+</ul>
+<h4 id="Product-Hunt"><a href="#Product-Hunt" class="headerlink" title="Product Hunt"></a>Product Hunt</h4><ul>
+<li><a href="https://www.producthunt.com/">https://www.producthunt.com/</a></li>
+</ul>
+<h4 id="湾区日报"><a href="#湾区日报" class="headerlink" title="湾区日报"></a>湾区日报</h4><ul>
+<li><a href="https://wanqu.co/">https://wanqu.co/</a></li>
+</ul>
+<h4 id="开发者头条"><a href="#开发者头条" class="headerlink" title="开发者头条"></a>开发者头条</h4><ul>
+<li><a href="https://toutiao.io/">https://toutiao.io/</a></li>
+</ul>
+<h4 id="爱范儿"><a href="#爱范儿" class="headerlink" title="爱范儿"></a>爱范儿</h4><ul>
+<li><a href="http://www.ifanr.com/">http://www.ifanr.com/</a></li>
+</ul>
+<h4 id="走心的-Swift-翻译组"><a href="#走心的-Swift-翻译组" class="headerlink" title="走心的 Swift 翻译组"></a>走心的 Swift 翻译组</h4><ul>
+<li><a href="http://swift.gg/">http://swift.gg/</a></li>
+</ul>
+<h4 id="优秀demo教程，质量高"><a href="#优秀demo教程，质量高" class="headerlink" title="优秀demo教程，质量高"></a>优秀demo教程，质量高</h4><ul>
+<li><a href="http://www.appcoda.com/">http://www.appcoda.com/</a></li>
+</ul>
+<h4 id="优秀iOS学习demo"><a href="#优秀iOS学习demo" class="headerlink" title="优秀iOS学习demo"></a>优秀iOS学习demo</h4><ul>
+<li><a href="https://www.ioscreator.com/">https://www.ioscreator.com/</a></li>
+</ul>
+<h4 id="C4"><a href="#C4" class="headerlink" title="C4"></a>C4</h4><ul>
+<li><a href="http://c4ios.swift.gg/">http://c4ios.swift.gg/</a></li>
+</ul>
+<h4 id="沙龙"><a href="#沙龙" class="headerlink" title="沙龙"></a><T>沙龙</T></h4><ul>
+<li><a href="http://t.swift.gg/">http://t.swift.gg/</a></li>
+</ul>
+<h4 id="Shanks的博客，位于深圳"><a href="#Shanks的博客，位于深圳" class="headerlink" title="Shanks的博客，位于深圳"></a>Shanks的博客，位于深圳</h4><ul>
+<li><a href="http://codebuild.me/">http://codebuild.me/</a></li>
+</ul>
+<h4 id="TODO-博客"><a href="#TODO-博客" class="headerlink" title="&#x2F;&#x2F; TODO: 博客"></a>&#x2F;&#x2F; TODO: 博客</h4><ul>
+<li><a href="http://www.saitjr.com/">http://www.saitjr.com/</a></li>
+</ul>
+<h4 id="我爱时间悠闲的博客"><a href="#我爱时间悠闲的博客" class="headerlink" title="我爱时间悠闲的博客"></a>我爱时间悠闲的博客</h4><ul>
+<li><a href="http://www.5isjyx.com/">http://www.5isjyx.com/</a></li>
+</ul>
+<h4 id="小锅的博客"><a href="#小锅的博客" class="headerlink" title="小锅的博客"></a>小锅的博客</h4><ul>
+<li><a href="http://www.swiftyper.com/">http://www.swiftyper.com/</a></li>
+</ul>
+<h4 id="RxSwift学习教程"><a href="#RxSwift学习教程" class="headerlink" title="RxSwift学习教程"></a>RxSwift学习教程</h4><ul>
+<li><a href="http://t.swift.gg/d/2-rxswift">http://t.swift.gg/d/2-rxswift</a></li>
+</ul>
+<h4 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a>掘金</h4><ul>
+<li><a href="https://juejin.im/timeline">https://juejin.im/timeline</a></li>
+</ul>
+<h4 id="ObjC中国"><a href="#ObjC中国" class="headerlink" title="ObjC中国"></a>ObjC中国</h4><ul>
+<li><a href="https://objccn.io/">https://objccn.io</a></li>
+</ul>
+<h4 id="InfoQ"><a href="#InfoQ" class="headerlink" title="InfoQ"></a>InfoQ</h4><ul>
+<li><a href="http://www.infoq.com/cn">http://www.infoq.com/cn</a></li>
+</ul>
+<h4 id="Stackoverflow"><a href="#Stackoverflow" class="headerlink" title="Stackoverflow"></a>Stackoverflow</h4><ul>
+<li><a href="http://stackoverflow.com/">http://stackoverflow.com</a></li>
+</ul>
+<h4 id="RayWenderlich"><a href="#RayWenderlich" class="headerlink" title="RayWenderlich"></a>RayWenderlich</h4><ul>
+<li><a href="http://www.raywenderlich.com/">www.raywenderlich.com</a></li>
+</ul>
+<h4 id="NShipster"><a href="#NShipster" class="headerlink" title="NShipster"></a>NShipster</h4><ul>
+<li><a href="http://nshipster.cn/">http://nshipster.cn</a></li>
+</ul>
+<h4 id="程序员头条"><a href="#程序员头条" class="headerlink" title="程序员头条"></a>程序员头条</h4><ul>
+<li><a href="http://www.90159.com/">http://www.90159.com</a></li>
+</ul>
+<h4 id="TODO"><a href="#TODO" class="headerlink" title="TODO:"></a>TODO:</h4><ul>
+<li><a href="http://www.saitjr.com/">http://www.saitjr.com/</a></li>
+</ul>
+<h4 id="码市"><a href="#码市" class="headerlink" title="码市"></a>码市</h4><ul>
+<li><a href="https://coding.net/">https://coding.net/</a></li>
+<li><a href="https://blog.coding.net/">https://blog.coding.net/</a></li>
+</ul>
+<hr>
+<h3 id="优秀博客"><a href="#优秀博客" class="headerlink" title="优秀博客"></a>优秀博客</h3><h4 id="iOS-架构模式-简述-MVC-MVP-MVVM-和-VIPER-译"><a href="#iOS-架构模式-简述-MVC-MVP-MVVM-和-VIPER-译" class="headerlink" title="iOS 架构模式 - 简述 MVC, MVP, MVVM 和 VIPER (译)"></a>iOS 架构模式 - 简述 MVC, MVP, MVVM 和 VIPER (译)</h4><ul>
+<li><a href="https://blog.coding.net/blog/ios-architecture-patterns">https://blog.coding.net/blog/ios-architecture-patterns</a></li>
+</ul>
+<h4 id="史上最全设计模式导学目录（完整版）"><a href="#史上最全设计模式导学目录（完整版）" class="headerlink" title="史上最全设计模式导学目录（完整版）"></a>史上最全设计模式导学目录（完整版）</h4><ul>
+<li><a href="http://blog.csdn.net/lovelion/article/details/17517213">http://blog.csdn.net/lovelion/article/details/17517213</a></li>
+</ul>
+<h4 id="对计算机及算法很深入"><a href="#对计算机及算法很深入" class="headerlink" title="对计算机及算法很深入"></a>对计算机及算法很深入</h4><ul>
+<li><a href="http://blog.mrriddler.com/archives/">http://blog.mrriddler.com/archives/</a></li>
+</ul>
+<h4 id="猴子都能懂的-Git-入门"><a href="#猴子都能懂的-Git-入门" class="headerlink" title="猴子都能懂的 Git 入门"></a>猴子都能懂的 Git 入门</h4><ul>
+<li><a href="http://backlogtool.com/git-guide/cn/">http://backlogtool.com/git-guide/cn/</a></li>
+</ul>

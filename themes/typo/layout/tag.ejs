@@ -1,0 +1,12 @@
+<%
+  var posts = page.posts ? page.posts.toArray() : [];
+%>
+<h1 class="archive-title">标签：<%= page.tag %></h1>
+<ul class="archives">
+<% posts.forEach(function (post) { %>
+  <li class="archive-item">
+    <time class="date" datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'YYYY.MM.DD') %></time>
+    <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+  </li>
+<% }); %>
+</ul>

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* ============================================================
+   root.css — 可直接覆盖 themes/<theme>/source/css/root.css
+   或部署仓库 css/root.css
+   变更：对比度达标、深色模式完整、栏宽与间距变量化、系统字体栈
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  --font-color: #1b1f24;          /* 标题 21:1 */
+  --font-color-secondary: #56606d; /* 正文 6.38:1 */
+  --font-color-extra: #626b78;    /* 日期/页脚 5.39:1（原 #aaa 仅 2.32:1） */
+  --font-color-refer: #2b3140;
+
+  --color-hr: #e5e8ed;
+  --color-link: #185fa5;          /* 6.52:1（原 #4078F2 仅 4.05:1） */
+  --color-background: #ffffff;
+  --color-surface: #f6f7f9;
+  --color-accent-soft: #eaf2fb;
+  --color-chip: #f1f3f7;
+  --color-header-bg: rgba(255, 255, 255, .88);
+
+  --color-unactive: #e5e8ed;
+  --color-active: #185fa5;
+  --color-list-item-even: #ffffff;
+  --color-list-item-odd: #fafbfc;
+
+  --color-post-content: #3c434e;
+  --color-background-code: #f6f7f9;
+  --color-border-code: #e5e8ed;
+  --color-hashtag: #185fa5;
+
+  --main-width: 1080px;
+  --pad-inline: clamp(20px, 4vw, 48px); /* 替换原 8vw，宽屏不再变窄 */
+  --pad-top: 32px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+/* 手动切换的深色（theme.js 会设置 html[data-theme]） */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --font-color: #eef0f4;
+  --font-color-secondary: #b7bfcb;
+  --font-color-extra: #aab3c0;
+  --font-color-refer: #ccd0e0;
+  --color-hr: #363b45;            /* 低对比分隔线，替代刺眼的 #ccc */
+  --color-link: #86b9ec;
+  --color-background: #1e2127;
+  --color-surface: #252932;
+  --color-accent-soft: #26384c;
+  --color-chip: #2b303a;
+  --color-header-bg: rgba(30, 33, 39, .88);
+  --color-unactive: #363b45;
+  --color-active: #86b9ec;
+  --color-list-item-even: #1e2127;
+  --color-list-item-odd: #23272f;
+  --color-post-content: #d7dce4;
+  --color-background-code: #191c22;
+  --color-border-code: #363b45;
+  --color-hashtag: #86b9ec;
+}
+
+/* 只覆盖 CSS、尚未部署 head.ejs 时，跟随系统深色 */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --font-color: #eef0f4;
+    --font-color-secondary: #b7bfcb;
+    --font-color-extra: #aab3c0;
+    --font-color-refer: #ccd0e0;
+    --color-hr: #363b45;
+    --color-link: #86b9ec;
+    --color-background: #1e2127;
+    --color-surface: #252932;
+    --color-accent-soft: #26384c;
+    --color-chip: #2b303a;
+    --color-header-bg: rgba(30, 33, 39, .88);
+    --color-unactive: #363b45;
+    --color-active: #86b9ec;
+    --color-list-item-even: #1e2127;
+    --color-list-item-odd: #23272f;
+    --color-post-content: #d7dce4;
+    --color-background-code: #191c22;
+    --color-border-code: #363b45;
+    --color-hashtag: #86b9ec;
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { list-style: none; padding-inline-start: 0; }
+html { scroll-behavior: smooth; }
+img, picture { width: auto; max-width: 100%; display: block; }
+input, button, textarea, select { font: inherit; }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--color-hr); border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}

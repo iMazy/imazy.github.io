@@ -1,0 +1,36 @@
+<%-
+/* ============================================================
+   layout/archive.ejs — 归档页
+   变更：按年份分组、补 <h1>、日期用 <time>、分组标题显示篇数
+   ============================================================ */
+'' %>
+<%
+  /* 归档首页用 archive_generator(per_page:0) 返回全部文章；
+     年/月归档页的 page.posts 只包含该时间段文章，因此优先用 page.posts */
+  var posts = page.posts
+    ? page.posts.toArray()
+    : site.posts.sort('date', -1).toArray();
+  posts.sort(function (a, b) { return b.date.valueOf() - a.date.valueOf(); });
+  var groups = {};
+  posts.forEach(function (post) {
+    var year = date(post.date, 'YYYY');
+    if (!groups[year]) groups[year] = [];
+    groups[year].push(post);
+  });
+  var years = Object.keys(groups).sort().reverse();
+%>
+<h1 class="archive-title">归档</h1>
+
+<% years.forEach(function (year) { %>
+<section class="archive-group">
+  <h2 class="archive-year"><%= year %><span><%= groups[year].length %> 篇</span></h2>
+  <ul class="archives">
+  <% groups[year].forEach(function (post) { %>
+    <li class="archive-item">
+      <time class="date" datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'YYYY.MM.DD') %></time>
+      <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </li>
+  <% }); %>
+  </ul>
+</section>
+<% }); %>

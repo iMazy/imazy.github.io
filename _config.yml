@@ -1,0 +1,81 @@
+# ============================================================
+# Mazy's Home — Hexo 源码工程
+# 由已部署的静态站点重建（原 Hexo 源码仓库已不在本机/GitHub）
+# 部署：hexo clean && hexo g && hexo d
+# ============================================================
+
+title: Mazy's Home
+subtitle: 要得到你想要的某样东西，最可靠的办法是让你自己配得上它
+# 保持原站点 description 为空，Hero 简介与 meta description 回退使用 subtitle
+description: ""
+author: Mr.Mazy
+email: mazy_ios@163.com
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: http://imazy.cn
+root: /
+
+# 保持原有文章链接不变：/YYYY/MM/DD/<文件名>/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: mtime
+
+per_page: 10
+pagination_dir: page
+
+theme: typo
+
+# 代码块：about 页沿用原站点 Hexo 内置高亮输出的 HTML
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 归档页单页展示全部 20 篇（原站点即如此），同时保留年/月归档
+archive_generator:
+  per_page: 0
+  yearly: true
+  monthly: true
+  daily: false
+
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+  order_by: -date
+  icon: https://www.gravatar.com/avatar/4991c3d065b4e094d4bbc05967cebb61
+  autodiscovery: false
+
+sitemap:
+  path: sitemap.xml
+
+deploy:
+  type: git
+  repo: git@github.com:iMazy/imazy.github.io.git
+  branch: master
+  # hexo-deployer-git 4.x 用 Luxon，格式串是 yyyy-MM-dd（不是 moment 的 YYYY-MM-DD）
+  message: 'Site updated: {{ now("yyyy-MM-dd HH:mm:ss") }}'

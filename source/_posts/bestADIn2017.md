@@ -1,0 +1,67 @@
+---
+title: "2017年走心广告文案分享"
+date: 2021-12-31 23:24:49
+updated: 2025-07-11 21:53:34
+comments: true
+categories:
+  - "文案摘录"
+tags:
+  - "文案"
+  - "广告"
+  - "摘录"
+excerpt: "好的广告，就是能猝不及防的触动你，然后还让你念念不忘 很多走心的洞察和沟通，都让人印象深刻 正如 2017 年的流行语所说，扎心了，老铁"
+---
+
+<ul>
+<li>好的广告，就是能猝不及防的触动你，然后还让你念念不忘</li>
+<li>很多走心的洞察和沟通，都让人印象深刻</li>
+<li>正如 2017 年的流行语所说，扎心了，老铁</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="网易云音乐联合农夫山泉"><a href="#网易云音乐联合农夫山泉" class="headerlink" title="网易云音乐联合农夫山泉"></a>网易云音乐联合农夫山泉</h3><hr>
+<iframe width="560" height="315" src="https://www.zhihu.com/video/918840671438266368" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="999感冒灵《这个世界总有人偷偷爱你》"><a href="#999感冒灵《这个世界总有人偷偷爱你》" class="headerlink" title="999感冒灵《这个世界总有人偷偷爱你》"></a>999感冒灵《这个世界总有人偷偷爱你》</h3><hr>
+<iframe width="560" height="315" src="https://www.zhihu.com/video/918619635606241280" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="泰国励志《改变不了世界，那就改变你自己》"><a href="#泰国励志《改变不了世界，那就改变你自己》" class="headerlink" title="泰国励志《改变不了世界，那就改变你自己》"></a>泰国励志《改变不了世界，那就改变你自己》</h3><hr>
+<iframe width="560" height="315" src="https://v.qq.com/iframe/player.html?vid=a03422jazyz&tiny=0&auto=0" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="泰国感人励志广告《生命的价值》"><a href="#泰国感人励志广告《生命的价值》" class="headerlink" title="泰国感人励志广告《生命的价值》"></a>泰国感人励志广告《生命的价值》</h3><hr>
+<iframe width="560" height="315" src="https://openapi-vtom.vmovier.com/video/5A1BDD53AC585" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="泰国：很多的悲剧，往往都是因为一句玩玩而已，谁也没有权利分享他人的隐私"><a href="#泰国：很多的悲剧，往往都是因为一句玩玩而已，谁也没有权利分享他人的隐私" class="headerlink" title="泰国：很多的悲剧，往往都是因为一句玩玩而已，谁也没有权利分享他人的隐私"></a>泰国：很多的悲剧，往往都是因为一句玩玩而已，谁也没有权利分享他人的隐私</h3><hr>
+<iframe width="560" height="315" src="https://www.zhihu.com/video/918910500438441984" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="华为发布新品广告《Dream-it-Possible》"><a href="#华为发布新品广告《Dream-it-Possible》" class="headerlink" title="华为发布新品广告《Dream it Possible》"></a>华为发布新品广告《Dream it Possible》</h3><hr>
+<iframe width="560" height="315" src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=add10a9c67ac688c9f943b0066bd04ed&tvId=6968433709&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="方太油烟机《油烟情书》"><a href="#方太油烟机《油烟情书》" class="headerlink" title="方太油烟机《油烟情书》"></a>方太油烟机《油烟情书》</h3><blockquote>
+<p>广告片是采编李建国、丁琳夫妇的50年来往书信，是“那时候车马很慢，书信也很慢，一辈子只够爱一个人”的真实爱情写照；是“柴米油盐酱醋茶，一点一滴都是幸福在发芽”的美满油烟生活；一年365天，一起洗菜、生火、做饭、吃饭……油烟，就是爱的印记，爱，值得我们铭记。<br>这本油烟情书，记录着平凡生活中不平淡的情感……</p>
+</blockquote>
+<iframe width="560" height="315" src="http://gslb.miaopai.com/stream/7ik3nly5-RwvYPWeHJNteHr~BJ0zHnfgcLBhWQ__.mp4?ssig=b8cd94b92288e7a5e578eb8e636bb26c&time_stamp=1514020666336&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=7ik3nly5-RwvYPWeHJNteHr%7EBJ0zHnfgcLBhWQ__" frameborder="0" allowfullscreen></iframe>
+
+
+<hr>
+<h3 id="红星二锅头"><a href="#红星二锅头" class="headerlink" title="红星二锅头"></a>红星二锅头</h3><hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-0c4e28408d494935.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-07a06131684ff6b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-7d0f698cd71a4b57.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-63892349f0a414d6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1335668-91aa3dcbac210ad1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<hr>
+<h3 id="雀巢生活感悟创意广告《我们一生会遇见多少人》"><a href="#雀巢生活感悟创意广告《我们一生会遇见多少人》" class="headerlink" title="雀巢生活感悟创意广告《我们一生会遇见多少人》"></a>雀巢生活感悟创意广告《我们一生会遇见多少人》</h3><hr>
+<iframe width="560" height="315" src="http://player.youku.com/embed/XMzIyOTcyNjI0NA==" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<h3 id="人民日报"><a href="#人民日报" class="headerlink" title="人民日报"></a>人民日报</h3><p>《<a href="http://media.u.imugeda.com/campaigns/5720288ea3664eb90d0004c7/20171011051227/59ddd2c1347a197b80045591/index.html?t=1156968566&custom=&crid=&s=15&appid=wx5b0e5c28d5a6b1ad&m_ew2qvip10n=%E9%91%AB&from=singlemessage&isappinstalled=0">史上最牛创业经</a>》</p>
+<hr>
+<h3 id="百雀羚"><a href="#百雀羚" class="headerlink" title="百雀羚"></a>百雀羚</h3><p>《<a href="https://link.zhihu.com/?target=http://mp.weixin.qq.com/s?__biz=MzU0OTE1ODMxOA==&mid=2247486155&amp;idx=1&amp;sn=71ebb6695a910cc079088e2a75b27b30&source=41&scene=21%23wechat_redirect">一九三一</a>》</p>
+<hr>

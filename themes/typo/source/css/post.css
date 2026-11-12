@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* ============================================================
+   post.css — 可直接覆盖 themes/<theme>/source/css/post.css
+   或部署仓库 css/post.css
+   变更：文章标题层级、行高/字距、深色模式硬编码颜色修正、
+         代码块/表格/引用/键盘按键统一走变量、移动端适配
+   ============================================================ */
+
+.post { display: block; margin-bottom: 24px; }
+
+.post-title {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-weight: 650;
+  letter-spacing: -.01em;
+  color: var(--font-color);
+  margin: 0 0 12px;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-hr);
+  font-size: 12px;
+  color: var(--font-color-extra);
+}
+.post-meta > .date { margin-right: 0; font-family: var(--font-mono); letter-spacing: .02em; }
+.post-meta > .tags { display: flex; gap: 6px; }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 40px 0 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-hr);
+  font-size: 13px;
+}
+.post-nav a { color: var(--color-link); max-width: 48%; }
+.post-nav a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- 正文 ---------- */
+.post-content {
+  width: 100%;
+  max-width: 760px;
+  font-family: var(--font-sans);   /* 与全站统一，替代原 -apple-system 硬编码 */
+  font-size: 16px;
+  line-height: 1.85;              /* 原 1.5 */
+  letter-spacing: .02em;          /* 原 1px */
+  color: var(--color-post-content);
+  word-wrap: break-word;
+}
+.post-content > :first-child { margin-top: 0 !important; }
+.post-content > :last-child { margin-bottom: 0 !important; }
+.post-content p { margin: 0 0 1em; white-space: normal; } /* 取消原全局 pre-wrap */
+.post-content a { color: var(--color-link); text-decoration: none; }
+.post-content a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.post-content strong { font-weight: 650; color: var(--font-color); }
+.post-content em { font-style: italic; }
+.post-content img { max-width: 100%; border-radius: 6px; box-sizing: content-box; }
+.post-content hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed var(--color-hr);
+  margin: 1.8em 0;
+  overflow: visible;
+}
+
+/* ---------- 标题 ---------- */
+.post-content h1, .post-content h2, .post-content h3,
+.post-content h4, .post-content h5, .post-content h6 {
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--font-color);
+  margin: 1.6em 0 .6em;
+}
+.post-content h1 { font-size: 1.9em; }
+.post-content h2 { font-size: 1.5em; padding-bottom: .3em; border-bottom: 1px solid var(--color-hr); }
+.post-content h3 { font-size: 1.25em; }
+.post-content h4 { font-size: 1.05em; }
+.post-content h5 { font-size: .95em; }
+.post-content h6 { font-size: .9em; color: var(--font-color-secondary); }
+.post-content h1::before, .post-content h2::before, .post-content h3::before,
+.post-content h4::before, .post-content h5::before, .post-content h6::before {
+  content: "⌗";
+  padding-right: 10px;
+  color: var(--color-hashtag);
+  font-weight: 400;
+}
+
+/* ---------- 列表 / 引用 / 表格 ---------- */
+.post-content ul, .post-content ol { padding-left: 2em; margin: 0 0 1em; }
+.post-content ul { list-style: disc; }
+.post-content ol { list-style: decimal; }
+.post-content li { word-wrap: break-word; margin: .25em 0; }
+.post-content li > p { margin-top: .6em; }
+
+.post-content blockquote {
+  border-left: 3px solid var(--color-link);
+  background: var(--color-surface);
+  color: var(--font-color-secondary);
+  padding: 10px 16px;
+  margin: 1.2em 0;
+  border-radius: 0 6px 6px 0;
+}
+.post-content blockquote > :first-child { margin-top: 0; }
+.post-content blockquote > :last-child { margin-bottom: 0; }
+
+.post-content table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
+.post-content table th, .post-content table td {
+  border: 1px solid var(--color-hr);   /* 原硬编码 #6b6b6b */
+  padding: 8px 12px;
+}
+.post-content table th { background: var(--color-surface); font-weight: 650; color: var(--font-color); }
+.post-content table tr { border-top: 1px solid var(--color-hr); } /* 原 #c6cbd1 */
+
+.post-content details { display: block; }
+.post-content summary { display: list-item; cursor: pointer; }
+.post-content dl dt { font-style: italic; font-weight: 650; margin-top: 16px; }
+.post-content dl dd { margin-left: 0; padding: 0 16px; margin-bottom: 16px; }
+
+/* ---------- 代码 ---------- */
+.post-content code, .post-content pre, .post-content kbd { font-family: var(--font-mono); }
+.post-content code {
+  font-size: 85%;
+  background: var(--color-background-code);
+  border: 1px solid var(--color-border-code);
+  border-radius: 4px;
+  padding: .15em .4em;
+  vertical-align: baseline;
+}
+.post-content pre {
+  font-size: 14px;
+  line-height: 1.65;
+  background: var(--color-background-code);
+  border: 1px solid var(--color-border-code);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 1.2em 0;
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+.post-content pre code {
+  font-size: 13.5px;
+  background: none;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+pre { white-space: pre; word-wrap: normal; overflow-x: auto; }
+pre code::-webkit-scrollbar { width: 6px; height: 8px; }
+pre code::-webkit-scrollbar-thumb { background: var(--color-hr); border-radius: 3px; }
+pre code::-webkit-scrollbar-track { background: transparent; }
+
+.post-content kbd {
+  background: var(--color-surface);        /* 原硬编码 #fafbfc */
+  border: 1px solid var(--color-hr);       /* 原 #d1d5da */
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  box-shadow: none;
+  color: var(--font-color);
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 2px 6px;
+  display: inline-block;
+}
+
+/* ---------- Hexo 内置高亮：about 页沿用的 figure.highlight 表格 ---------- */
+.post-content figure.highlight {
+  margin: 1.2em 0;
+  background: var(--color-background-code);
+  border: 1px solid var(--color-border-code);
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.post-content figure.highlight table { display: table; width: 100%; margin: 0; border: 0; }
+.post-content figure.highlight tr { border: 0; }
+.post-content figure.highlight th,
+.post-content figure.highlight td {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-weight: 400;
+}
+.post-content figure.highlight pre {
+  margin: 0;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  font-size: 13px;
+}
+.post-content figure.highlight .gutter { width: 1%; white-space: nowrap; }
+.post-content figure.highlight .gutter pre {
+  padding-right: 10px;
+  text-align: right;
+  color: var(--font-color-extra);
+  border-right: 1px solid var(--color-hr);
+  user-select: none;
+}
+.post-content figure.highlight .code { width: 99%; }
+.post-content figure.highlight .code pre { padding-left: 14px; }
+
+/* ---------- highlight.js ---------- */
+.hljs {
+  width: 100%;
+  background: var(--color-background-code);
+  border: 1px solid var(--color-border-code);
+  border-radius: 8px;
+  margin: 1.2em 0;
+  overflow-x: auto;
+}
+.hljs > table { margin-bottom: 0; }
+.hljs table td, .hljs table th, .hljs table tr { border: 0; padding: 0; }
+.hljs-ln-line.hljs-ln-numbers {
+  text-align: right;
+  padding-right: 10px;
+  border-right: 1px solid var(--color-hr); /* 原 #dddddd */
+  margin-right: 12px;
+  color: var(--font-color-extra);
+}
+.hljs .code { width: 100%; }
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 640px) {
+  .post-title { font-size: 1.5rem; }
+  .post-content { font-size: 15.5px; line-height: 1.8; }
+  .post-content h1 { font-size: 1.6em; }
+  .post-content h2 { font-size: 1.35em; }
+  .post-content pre { padding: 12px; font-size: 13px; }
+  .post-nav { flex-direction: column; gap: 10px; }
+  .post-nav a { max-width: 100%; }
+}

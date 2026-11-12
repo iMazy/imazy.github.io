@@ -1,0 +1,10 @@
+<%-
+/* ============================================================
+   layout/_partial/footer.ejs — 对应原主题输出 <footer class="footer"> 的模板
+   变更：动态年份、去掉写死的 typo 占位、补 RSS 与回到顶部
+   ============================================================ */
+'' %>
+<footer class="footer">
+  <span>Copyright © <%= new Date().getFullYear() %> <%= config.title %></span>
+  <span><a href="<%- url_for('/atom.xml') %>">RSS 订阅</a> · <a href="#top">回到顶部</a></span>
+</footer>

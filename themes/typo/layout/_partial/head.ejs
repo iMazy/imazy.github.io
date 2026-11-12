@@ -1,0 +1,63 @@
+<%-
+/* ============================================================
+   layout/_partial/head.ejs — 对应原主题里输出 <head> 的模板
+   变更：修 title/footer 占位符、viewport 允许缩放、补 description/
+        canonical/OG、按需加载 highlight 资源、移除 Google Fonts、
+        CSS 之前初始化 data-theme 避免深色闪白
+   若原主题把 head 直接写在 layout.ejs 里，把本文件 <head> 内容整段替换过去。
+   ============================================================ */
+'' %>
+<%
+  /* 自带纯文本提取，避免依赖 strip_html 等辅助函数 */
+  function plainText(html) {
+    return String(html || '')
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&[a-zA-Z#0-9]+;/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  var rawDesc = page.description || (page.excerpt ? plainText(page.excerpt) : '') || config.description || config.subtitle || '';
+  var desc = rawDesc.replace(/\s+/g, ' ').trim().slice(0, 150);
+  var siteUrl = (config.url || '').replace(/\/$/, '');
+  var canonical = siteUrl + url_for(page.path).replace(/index\.html$/, '');
+  var pageTitle = (page.title ? page.title + ' 丨 ' : '') + config.title;
+  /* Hexo 服务端高亮输出 <figure class="highlight">；只需加载配色 CSS，不必加载 highlight.js */
+  var hasHighlight = /<figure class="highlight"|<pre[\s>]/i.test(page.content || '');
+%>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title><%= pageTitle %></title>
+<meta name="description" content="<%= desc %>">
+<meta name="author" content="<%= config.author || '' %>">
+<link rel="canonical" href="<%= canonical %>">
+<meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>">
+<meta property="og:site_name" content="<%= config.title %>">
+<meta property="og:title" content="<%= pageTitle %>">
+<meta property="og:description" content="<%= desc %>">
+<meta property="og:url" content="<%= canonical %>">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1e2127" media="(prefers-color-scheme: dark)">
+
+<link rel="shortcut icon" href="<%- url_for('/icon.svg') %>">
+<link rel="alternate" href="<%- url_for('/atom.xml') %>" title="<%= config.title %>" type="application/atom+xml">
+
+<% if (hasHighlight) { %>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
+<% } %>
+
+<script>
+(function () {
+  var v = null;
+  try { v = localStorage.getItem('imazy-theme'); } catch (e) {}
+  if (!v) v = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', v);
+})();
+</script>
+
+<link rel="stylesheet" href="<%- url_for('/css/root.css') %>">
+<link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
+<link rel="stylesheet" href="<%- url_for('/css/post.css') %>">

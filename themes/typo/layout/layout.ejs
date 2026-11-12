@@ -1,0 +1,38 @@
+<%-
+/* ============================================================
+   layout/layout.ejs — Hexo 主题最外层模板
+   文件映射说明（按你主题实际文件名对号入座）：
+     layout.ejs                     → 本文件
+     _partial/head.ejs              → 输出 <head> 的局部模板
+     _partial/header.ejs            → 输出站点头部的局部模板
+     _partial/footer.ejs            → 输出页脚的局部模板
+     index.ejs                      → 首页
+     post.ejs                       → 文章页
+     page.ejs                       → 独立页面（about）
+     archive.ejs                    → 归档页
+   如果原主题用 EJS 原生 include() 而不是 Hexo 的 partial()，
+   把下面三处 partial('_partial/xxx') 改成 include('_partial/xxx')。
+   ============================================================ */
+'' %>
+<!DOCTYPE html>
+<html lang="zh-CN" id="top">
+<head>
+  <%- partial('_partial/head') %>
+</head>
+<body>
+  <%- partial('_partial/header') %>
+
+  <main class="main">
+    <%- body %>
+  </main>
+
+  <%- partial('_partial/footer') %>
+
+  <% /* 仅当文章里有原始 <pre><code> 才需要客户端高亮；Hexo 服务端高亮不需要 */ %>
+  <% if (/<pre><code/i.test(page.content || '')) { %>
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+  <script src="<%- url_for('/js/highlight.js') %>"></script>
+  <% } %>
+  <script src="<%- url_for('/js/theme.js') %>"></script>
+</body>
+</html>
