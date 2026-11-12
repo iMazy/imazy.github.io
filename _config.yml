@@ -13,7 +13,7 @@ email: mazy_ios@163.com
 language: zh-CN
 timezone: Asia/Shanghai
 
-url: http://imazy.cn
+url: https://imazy.com.cn
 root: /
 
 # 保持原有文章链接不变：/YYYY/MM/DD/<文件名>/

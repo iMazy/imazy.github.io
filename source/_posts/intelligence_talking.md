@@ -17,7 +17,7 @@ excerpt: "说话不只是一种“感觉”，还是一门“技术”！就像�
 <span id="more"></span>
 
 <hr>
-<p><img src="http://upload-images.jianshu.io/upload_images/1335668-af23fa03eb1331b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1335668-af23fa03eb1331b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
 <p><strong>把 NO 变成 YES 的7个突破口</strong></p>
 <ul>
 <li>1、投其所好</li>
@@ -29,7 +29,7 @@ excerpt: "说话不只是一种“感觉”，还是一门“技术”！就像�
 <li>7、感谢</li>
 </ul>
 <hr>
-<p><img src="http://upload-images.jianshu.io/upload_images/1335668-d45047ef22d59ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><strong>创造“警句”的 8 个技巧</strong></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1335668-d45047ef22d59ddc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br><strong>创造“警句”的 8 个技巧</strong></p>
 <ul>
 <li>1、惊奇法</li>
 <li>2、反差法</li>
@@ -41,7 +41,7 @@ excerpt: "说话不只是一种“感觉”，还是一门“技术”！就像�
 <li>8、顶点法</li>
 </ul>
 <hr>
-<p><img src="http://upload-images.jianshu.io/upload_images/1335668-8e027cc7cb4b6d0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1335668-8e027cc7cb4b6d0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
 <h3 id="把-NO-变成-YES-3个步骤"><a href="#把-NO-变成-YES-3个步骤" class="headerlink" title="把 NO 变成 YES 3个步骤"></a>把 NO 变成 YES 3个步骤</h3><ul>
 <li>步骤一：<strong>不直接说出自己的想法</strong></li>
 <li>步骤二：<strong>揣摩对方的心理</strong></li>

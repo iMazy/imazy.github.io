@@ -36,7 +36,7 @@ excerpt: "提问式思维是一套系统，通过巧妙地提问来转变斯文�
 <h4 id="选择地图："><a href="#选择地图：" class="headerlink" title="选择地图："></a>选择地图：</h4><blockquote>
 <p>选择地图是此书的核心，所有的实例都是围绕选择地图来阐述的</p>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/1335668-fa5f986efbcc98c1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1335668-fa5f986efbcc98c1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
 <hr>
 <h4 id="批判者-学习者提问对比"><a href="#批判者-学习者提问对比" class="headerlink" title="批判者&amp;学习者提问对比"></a>批判者&amp;学习者提问对比</h4><blockquote>
 <p>我们所有人都会提出这两类问题，而且我们每个人都有能力选择自己要问哪类问题，每时每刻都可以选择</p>
