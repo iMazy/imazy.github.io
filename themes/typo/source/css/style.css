@@ -288,9 +288,8 @@ p { word-wrap: break-word; } /* 原全局 white-space: pre-wrap 已移除，避�
   .header { position: static; padding-top: 12px; }
   .header-container { min-height: 0; gap: 10px; flex-wrap: wrap; }
   .logo { font-size: 1.28rem; }
-  /* 「简七读财 · 文章索引」较长，窄屏允许导航换行，避免挤出视口 */
+  /* 导航项增至 5 个，窄屏允许换行，避免挤出视口 */
   .nav { gap: 8px 12px; flex-wrap: wrap; justify-content: flex-end; white-space: normal; }
-  .nav-index { white-space: nowrap; }
   .nav li a { font-size: 12px; }
   .theme-toggle { font-size: 11px; padding: 4px 8px; }
   .hero { padding: 24px 0 22px; }
